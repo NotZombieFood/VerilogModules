@@ -13,6 +13,7 @@ I like to have a customizable text editor so I will recommend a combination that
 * linter-ui
 * linter-verilog
 * file-icons (not necessary but will make your life easier)
+####Installing Atom
 Installing Atom is as simple as it can gets, just go to: [atom.io](atom.io)
 Also you can install themes if you like different color palettes.
 #### IT WON'T WORK LIKE THIS!
