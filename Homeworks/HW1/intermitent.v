@@ -18,19 +18,14 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ClockDevider(
-    input clk,
-    input Reset,
-    output clkResult
-    );
-reg Count [27:0];
-assign clkResult = (Count ==50000000);
-assign reset = (Count>50000000)
-always @ (posedge clk) begin
-if (Reset)
-Count <= 0;
-else
-Count <= Count +1;
-end
 
+module intermitent (enable, salida);
+input enable;
+output reg salida;
+always @ (posedge enable) begin
+  if (salida==1)
+    salida <=0;
+  else
+    salida <= 1;
+end
 endmodule
