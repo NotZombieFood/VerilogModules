@@ -3,6 +3,8 @@
 Altera DE2-70, which manual can be found at this [link](https://www.terasic.com.tw/attachment/archive/226/DE2_70_User_manual_v105.pdf)
 The software we will use for compiling for the fpga is Quartus 13.0 Web Edition because it is the free one:
 [Quartus13.0](http://download.altera.com/akdlm/software/acdsinst/13.0sp1/232/ib_installers/QuartusSetupWeb-13.0.1.232.exe)
+### Necesitas este archivo para la instalación
+[Cyclone II](http://download.altera.com/akdlm/software/acdsinst/13.0sp1/232/ib_installers/cyclone_web-13.0.1.232.qdz)
 ## Environment for working
 ### Text editor or IDE
 Text editors are a ligthweight and reliable solution for working with code and it is also the case with Verilog.
