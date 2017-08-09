@@ -9,7 +9,7 @@ The software we will use for compiling for the fpga is Quartus 13.0 Web Edition 
 ### Text editor or IDE
 Text editors are a ligthweight and reliable solution for working with code and it is also the case with Verilog.
 I like to have a customizable text editor so I will recommend a combination that works pretty well for me, Atom plus some extensions like:
-*aligner-verilog
+* aligner-verilog
 * language-verilog
 * linter
 * linter-ui
