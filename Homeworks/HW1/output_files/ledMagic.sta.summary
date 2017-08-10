@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'iCLK_50'
+Slack : -3.362
+TNS   : -81.363
+
+Type  : Slow Model Setup 'clockDevider:altera50mhz|counter[0]'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Hold 'iCLK_50'
+Slack : -2.156
+TNS   : -21.154
+
+Type  : Slow Model Hold 'clockDevider:altera50mhz|counter[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'iCLK_50'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Slow Model Minimum Pulse Width 'clockDevider:altera50mhz|counter[0]'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Setup 'iCLK_50'
+Slack : -0.987
+TNS   : -23.108
+
+Type  : Fast Model Setup 'clockDevider:altera50mhz|counter[0]'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Hold 'iCLK_50'
+Slack : -1.238
+TNS   : -15.270
+
+Type  : Fast Model Hold 'clockDevider:altera50mhz|counter[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'iCLK_50'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Fast Model Minimum Pulse Width 'clockDevider:altera50mhz|counter[0]'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------

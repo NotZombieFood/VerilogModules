@@ -1,0 +1,1218 @@
+TimeQuest Timing Analyzer report for ledMagic
+Wed Aug 09 23:42:38 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'iCLK_50'
+ 12. Slow Model Setup: 'clockDevider:altera50mhz|counter[0]'
+ 13. Slow Model Hold: 'iCLK_50'
+ 14. Slow Model Hold: 'clockDevider:altera50mhz|counter[0]'
+ 15. Slow Model Minimum Pulse Width: 'iCLK_50'
+ 16. Slow Model Minimum Pulse Width: 'clockDevider:altera50mhz|counter[0]'
+ 17. Setup Times
+ 18. Hold Times
+ 19. Clock to Output Times
+ 20. Minimum Clock to Output Times
+ 21. Fast Model Setup Summary
+ 22. Fast Model Hold Summary
+ 23. Fast Model Recovery Summary
+ 24. Fast Model Removal Summary
+ 25. Fast Model Minimum Pulse Width Summary
+ 26. Fast Model Setup: 'iCLK_50'
+ 27. Fast Model Setup: 'clockDevider:altera50mhz|counter[0]'
+ 28. Fast Model Hold: 'iCLK_50'
+ 29. Fast Model Hold: 'clockDevider:altera50mhz|counter[0]'
+ 30. Fast Model Minimum Pulse Width: 'iCLK_50'
+ 31. Fast Model Minimum Pulse Width: 'clockDevider:altera50mhz|counter[0]'
+ 32. Setup Times
+ 33. Hold Times
+ 34. Clock to Output Times
+ 35. Minimum Clock to Output Times
+ 36. Multicorner Timing Analysis Summary
+ 37. Setup Times
+ 38. Hold Times
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; ledMagic                                                          ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C70F896C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                   ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+; Clock Name                          ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                 ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+; clockDevider:altera50mhz|counter[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockDevider:altera50mhz|counter[0] } ;
+; iCLK_50                             ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { iCLK_50 }                             ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                                    ;
++-------------+-----------------+-------------------------------------+------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                          ; Note                                                 ;
++-------------+-----------------+-------------------------------------+------------------------------------------------------+
+; 229.25 MHz  ; 229.25 MHz      ; iCLK_50                             ;                                                      ;
+; 1610.31 MHz ; 500.0 MHz       ; clockDevider:altera50mhz|counter[0] ; limit due to low minimum pulse width violation (tcl) ;
++-------------+-----------------+-------------------------------------+------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------+
+; Slow Model Setup Summary                                     ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; iCLK_50                             ; -3.362 ; -81.363       ;
+; clockDevider:altera50mhz|counter[0] ; 0.379  ; 0.000         ;
++-------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------+
+; Slow Model Hold Summary                                      ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; iCLK_50                             ; -2.156 ; -21.154       ;
+; clockDevider:altera50mhz|counter[0] ; 0.391  ; 0.000         ;
++-------------------------------------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary                       ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; iCLK_50                             ; -1.380 ; -27.380       ;
+; clockDevider:altera50mhz|counter[0] ; -0.500 ; -1.000        ;
++-------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'iCLK_50'                                                                                                                                ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.362 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.398      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.286 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.322      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.229 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.265      ;
+; -3.228 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.150     ; 4.114      ;
+; -3.152 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.150     ; 4.038      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.142 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.178      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.112 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.148      ;
+; -3.095 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.150     ; 3.981      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.080 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.116      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.065 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.101      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.055 ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.091      ;
+; -3.029 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 4.065      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clockDevider:altera50mhz|counter[0]'                                                                                                                                ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 0.379 ; intermitent:register|salida ; intermitent:register|salida ; clockDevider:altera50mhz|counter[0] ; clockDevider:altera50mhz|counter[0] ; 1.000        ; 0.000      ; 0.657      ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'iCLK_50'                                                                                                                                                        ;
++--------+--------------------------------------+--------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock                        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+; -2.156 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.108      ;
+; -1.770 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.494      ;
+; -1.699 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.565      ;
+; -1.656 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.108      ;
+; -1.628 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.636      ;
+; -1.557 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.707      ;
+; -1.398 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.866      ;
+; -1.327 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 1.937      ;
+; -1.270 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.494      ;
+; -1.256 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 2.008      ;
+; -1.199 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.565      ;
+; -1.185 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 2.079      ;
+; -1.128 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.636      ;
+; -1.114 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 2.150      ;
+; -1.057 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.707      ;
+; -1.043 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 2.221      ;
+; -0.972 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[11] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.748      ; 2.292      ;
+; -0.898 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.866      ;
+; -0.827 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 1.937      ;
+; -0.756 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 2.008      ;
+; -0.742 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.509      ;
+; -0.685 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 2.079      ;
+; -0.671 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.580      ;
+; -0.614 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 2.150      ;
+; -0.600 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.651      ;
+; -0.543 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 2.221      ;
+; -0.529 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.722      ;
+; -0.472 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[11] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.748      ; 2.292      ;
+; -0.458 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.793      ;
+; -0.387 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[18] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.864      ;
+; -0.316 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[19] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 2.935      ;
+; -0.245 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 3.006      ;
+; -0.242 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.509      ;
+; -0.171 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.580      ;
+; -0.100 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.651      ;
+; -0.086 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 3.165      ;
+; -0.029 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.722      ;
+; -0.015 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[22] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 3.236      ;
+; 0.042  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.793      ;
+; 0.056  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 3.307      ;
+; 0.113  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[18] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.864      ;
+; 0.127  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[24] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 3.378      ;
+; 0.184  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[19] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 2.935      ;
+; 0.198  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[25] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.735      ; 3.449      ;
+; 0.255  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 3.006      ;
+; 0.256  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[12] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 2.598      ; 3.370      ;
+; 0.414  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 3.165      ;
+; 0.485  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[22] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 3.236      ;
+; 0.556  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 3.307      ;
+; 0.627  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[24] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 3.378      ;
+; 0.698  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[25] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.735      ; 3.449      ;
+; 0.703  ; clockDevider:altera50mhz|counter[25] ; clockDevider:altera50mhz|counter[25] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.969      ;
+; 0.756  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[12] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 2.598      ; 3.370      ;
+; 0.795  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[13] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[14] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.061      ;
+; 0.801  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.067      ;
+; 0.806  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[10] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[11] ; clockDevider:altera50mhz|counter[11] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[15] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[17] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[20] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.072      ;
+; 0.828  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[16] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.094      ;
+; 0.835  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[21] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.101      ;
+; 0.835  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[23] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.101      ;
+; 0.842  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.108      ;
+; 0.844  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.110      ;
+; 0.845  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.111      ;
+; 0.846  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.112      ;
+; 0.846  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.112      ;
+; 0.980  ; clockDevider:altera50mhz|counter[18] ; clockDevider:altera50mhz|counter[18] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.246      ;
+; 0.984  ; clockDevider:altera50mhz|counter[19] ; clockDevider:altera50mhz|counter[19] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.250      ;
+; 1.019  ; clockDevider:altera50mhz|counter[22] ; clockDevider:altera50mhz|counter[22] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.285      ;
+; 1.178  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[14] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.444      ;
+; 1.178  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[15] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.444      ;
+; 1.184  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.450      ;
+; 1.189  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[11] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.455      ;
+; 1.189  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[16] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.455      ;
+; 1.189  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.455      ;
+; 1.189  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.455      ;
+; 1.189  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[18] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.455      ;
+; 1.214  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[17] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.480      ;
+; 1.221  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[24] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.487      ;
+; 1.221  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[22] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.487      ;
+; 1.228  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.494      ;
+; 1.230  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.496      ;
+; 1.231  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.497      ;
+; 1.232  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.498      ;
+; 1.232  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.498      ;
+; 1.234  ; clockDevider:altera50mhz|counter[24] ; clockDevider:altera50mhz|counter[24] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.500      ;
+; 1.249  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[15] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.515      ;
+; 1.249  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[16] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.515      ;
+; 1.255  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.521      ;
+; 1.260  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[19] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.526      ;
+; 1.260  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[17] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.526      ;
+; 1.260  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.526      ;
+; 1.260  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.526      ;
+; 1.281  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[21] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 1.547      ;
++--------+--------------------------------------+--------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clockDevider:altera50mhz|counter[0]'                                                                                                                                 ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 0.391 ; intermitent:register|salida ; intermitent:register|salida ; clockDevider:altera50mhz|counter[0] ; clockDevider:altera50mhz|counter[0] ; 0.000        ; 0.000      ; 0.657      ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'iCLK_50'                                                                               ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; iCLK_50 ; Rise       ; iCLK_50                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[12] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[12] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[13] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[13] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[14] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[14] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[15] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[15] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[16] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[16] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[17] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[17] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[18] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[18] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[19] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[19] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[20] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[20] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[21] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[21] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[22] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[22] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[23] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[23] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[24] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[24] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[25] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[25] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[9]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[0]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[0]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[10]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[10]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[11]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[11]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[12]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[12]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[13]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[13]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[14]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[14]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[15]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[15]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[16]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[16]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[17]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[17]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[18]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[18]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[19]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[19]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[1]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[1]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[20]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[20]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[21]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[21]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[22]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[22]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[23]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[23]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[24]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[24]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[25]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[25]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[2]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[2]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[3]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[3]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[4]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[4]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[5]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[5]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[6]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[6]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[7]|clk           ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clockDevider:altera50mhz|counter[0]'                                                                        ;
++--------+--------------+----------------+------------------+-------------------------------------+------------+-------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                               ; Clock Edge ; Target                        ;
++--------+--------------+----------------+------------------+-------------------------------------+------------+-------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; intermitent:register|salida   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; intermitent:register|salida   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|Equal0~0|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|Equal0~0|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|counter[0]|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|counter[0]|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; register|salida|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; register|salida|clk           ;
++--------+--------------+----------------+------------------+-------------------------------------+------------+-------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; iKEY[*]   ; iCLK_50    ; 6.156 ; 6.156 ; Rise       ; iCLK_50         ;
+;  iKEY[3]  ; iCLK_50    ; 6.156 ; 6.156 ; Rise       ; iCLK_50         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; iKEY[*]   ; iCLK_50    ; -5.471 ; -5.471 ; Rise       ; iCLK_50         ;
+;  iKEY[3]  ; iCLK_50    ; -5.471 ; -5.471 ; Rise       ; iCLK_50         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                               ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; Data Port  ; Clock Port                          ; Rise  ; Fall  ; Clock Edge ; Clock Reference                     ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; oLEDR[*]   ; clockDevider:altera50mhz|counter[0] ; 9.396 ; 9.396 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
+;  oLEDR[16] ; clockDevider:altera50mhz|counter[0] ; 9.396 ; 9.396 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                       ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; Data Port  ; Clock Port                          ; Rise  ; Fall  ; Clock Edge ; Clock Reference                     ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; oLEDR[*]   ; clockDevider:altera50mhz|counter[0] ; 9.396 ; 9.396 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
+;  oLEDR[16] ; clockDevider:altera50mhz|counter[0] ; 9.396 ; 9.396 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+
+
++--------------------------------------------------------------+
+; Fast Model Setup Summary                                     ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; iCLK_50                             ; -0.987 ; -23.108       ;
+; clockDevider:altera50mhz|counter[0] ; 0.665  ; 0.000         ;
++-------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------+
+; Fast Model Hold Summary                                      ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; iCLK_50                             ; -1.238 ; -15.270       ;
+; clockDevider:altera50mhz|counter[0] ; 0.215  ; 0.000         ;
++-------------------------------------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary                       ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; iCLK_50                             ; -1.380 ; -27.380       ;
+; clockDevider:altera50mhz|counter[0] ; -0.500 ; -1.000        ;
++-------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'iCLK_50'                                                                                                                                ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.987 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.019      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.984 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 2.016      ;
+; -0.968 ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.107     ; 1.893      ;
+; -0.965 ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.107     ; 1.890      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.945 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.977      ;
+; -0.926 ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.107     ; 1.851      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.923 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.955      ;
+; -0.904 ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.107     ; 1.829      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.893 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.925      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.881 ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.913      ;
+; -0.874 ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[12] ; iCLK_50      ; iCLK_50     ; 1.000        ; -0.107     ; 1.799      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.874 ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[0]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.906      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
+; -0.865 ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[11] ; iCLK_50      ; iCLK_50     ; 1.000        ; 0.000      ; 1.897      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clockDevider:altera50mhz|counter[0]'                                                                                                                                ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 0.665 ; intermitent:register|salida ; intermitent:register|salida ; clockDevider:altera50mhz|counter[0] ; clockDevider:altera50mhz|counter[0] ; 1.000        ; 0.000      ; 0.367      ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'iCLK_50'                                                                                                                                                        ;
++--------+--------------------------------------+--------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock                        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+; -1.238 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.528      ;
+; -1.098 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.668      ;
+; -1.063 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.703      ;
+; -1.028 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.738      ;
+; -0.993 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.773      ;
+; -0.899 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.867      ;
+; -0.864 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.902      ;
+; -0.829 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.937      ;
+; -0.794 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 0.972      ;
+; -0.759 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 1.007      ;
+; -0.738 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.528      ;
+; -0.724 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 1.042      ;
+; -0.689 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[11] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.473      ; 1.077      ;
+; -0.598 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.668      ;
+; -0.563 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.703      ;
+; -0.556 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.199      ;
+; -0.528 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.738      ;
+; -0.521 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.234      ;
+; -0.493 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.773      ;
+; -0.486 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.269      ;
+; -0.451 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.304      ;
+; -0.416 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.339      ;
+; -0.399 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.867      ;
+; -0.381 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[18] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.374      ;
+; -0.364 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.902      ;
+; -0.346 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[19] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.409      ;
+; -0.329 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.937      ;
+; -0.311 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.444      ;
+; -0.294 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 0.972      ;
+; -0.259 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 1.007      ;
+; -0.224 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 1.042      ;
+; -0.217 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.538      ;
+; -0.189 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[11] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.473      ; 1.077      ;
+; -0.182 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[22] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.573      ;
+; -0.147 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.608      ;
+; -0.112 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[24] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.643      ;
+; -0.089 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[12] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.366      ; 1.570      ;
+; -0.077 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[25] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; 0.000        ; 1.462      ; 1.678      ;
+; -0.056 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.199      ;
+; -0.021 ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.234      ;
+; 0.014  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.269      ;
+; 0.049  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.304      ;
+; 0.084  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.339      ;
+; 0.119  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[18] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.374      ;
+; 0.154  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[19] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.409      ;
+; 0.189  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.444      ;
+; 0.283  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.538      ;
+; 0.318  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[22] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.573      ;
+; 0.320  ; clockDevider:altera50mhz|counter[25] ; clockDevider:altera50mhz|counter[25] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.472      ;
+; 0.353  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.608      ;
+; 0.355  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[13] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[14] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.507      ;
+; 0.360  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[15] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.512      ;
+; 0.361  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[17] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361  ; clockDevider:altera50mhz|counter[20] ; clockDevider:altera50mhz|counter[20] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.513      ;
+; 0.362  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[10] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362  ; clockDevider:altera50mhz|counter[11] ; clockDevider:altera50mhz|counter[11] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[1]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363  ; clockDevider:altera50mhz|counter[4]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.515      ;
+; 0.367  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[16] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.519      ;
+; 0.369  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[21] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.521      ;
+; 0.369  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[23] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.521      ;
+; 0.376  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.528      ;
+; 0.377  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[5]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.529      ;
+; 0.377  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.530      ;
+; 0.388  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[24] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.643      ;
+; 0.411  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[12] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.366      ; 1.570      ;
+; 0.423  ; clockDevider:altera50mhz|counter[0]  ; clockDevider:altera50mhz|counter[25] ; clockDevider:altera50mhz|counter[0] ; iCLK_50     ; -0.500       ; 1.462      ; 1.678      ;
+; 0.441  ; clockDevider:altera50mhz|counter[18] ; clockDevider:altera50mhz|counter[18] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.593      ;
+; 0.443  ; clockDevider:altera50mhz|counter[19] ; clockDevider:altera50mhz|counter[19] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.595      ;
+; 0.454  ; clockDevider:altera50mhz|counter[22] ; clockDevider:altera50mhz|counter[22] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.606      ;
+; 0.493  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[14] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.645      ;
+; 0.493  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[15] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.645      ;
+; 0.498  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[16] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[7]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[9]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.650      ;
+; 0.499  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[18] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.651      ;
+; 0.500  ; clockDevider:altera50mhz|counter[10] ; clockDevider:altera50mhz|counter[11] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.652      ;
+; 0.501  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[2]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.653      ;
+; 0.507  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[17] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.659      ;
+; 0.509  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[24] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.661      ;
+; 0.509  ; clockDevider:altera50mhz|counter[21] ; clockDevider:altera50mhz|counter[22] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.661      ;
+; 0.516  ; clockDevider:altera50mhz|counter[3]  ; clockDevider:altera50mhz|counter[4]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516  ; clockDevider:altera50mhz|counter[2]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.668      ;
+; 0.517  ; clockDevider:altera50mhz|counter[5]  ; clockDevider:altera50mhz|counter[6]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.669      ;
+; 0.517  ; clockDevider:altera50mhz|counter[7]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.669      ;
+; 0.518  ; clockDevider:altera50mhz|counter[9]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.670      ;
+; 0.528  ; clockDevider:altera50mhz|counter[13] ; clockDevider:altera50mhz|counter[15] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.680      ;
+; 0.528  ; clockDevider:altera50mhz|counter[14] ; clockDevider:altera50mhz|counter[16] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.680      ;
+; 0.533  ; clockDevider:altera50mhz|counter[15] ; clockDevider:altera50mhz|counter[17] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.685      ;
+; 0.533  ; clockDevider:altera50mhz|counter[6]  ; clockDevider:altera50mhz|counter[8]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.685      ;
+; 0.533  ; clockDevider:altera50mhz|counter[8]  ; clockDevider:altera50mhz|counter[10] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.685      ;
+; 0.534  ; clockDevider:altera50mhz|counter[17] ; clockDevider:altera50mhz|counter[19] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.686      ;
+; 0.536  ; clockDevider:altera50mhz|counter[1]  ; clockDevider:altera50mhz|counter[3]  ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.688      ;
+; 0.542  ; clockDevider:altera50mhz|counter[16] ; clockDevider:altera50mhz|counter[18] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.694      ;
+; 0.544  ; clockDevider:altera50mhz|counter[23] ; clockDevider:altera50mhz|counter[25] ; iCLK_50                             ; iCLK_50     ; 0.000        ; 0.000      ; 0.696      ;
++--------+--------------------------------------+--------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clockDevider:altera50mhz|counter[0]'                                                                                                                                 ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 0.215 ; intermitent:register|salida ; intermitent:register|salida ; clockDevider:altera50mhz|counter[0] ; clockDevider:altera50mhz|counter[0] ; 0.000        ; 0.000      ; 0.367      ;
++-------+-----------------------------+-----------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'iCLK_50'                                                                               ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; iCLK_50 ; Rise       ; iCLK_50                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[12] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[12] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[13] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[13] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[14] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[14] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[15] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[15] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[16] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[16] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[17] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[17] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[18] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[18] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[19] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[19] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[20] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[20] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[21] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[21] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[22] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[22] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[23] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[23] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[24] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[24] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[25] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[25] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; clockDevider:altera50mhz|counter[9]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[0]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[0]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[10]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[10]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[11]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[11]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[12]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[12]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[13]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[13]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[14]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[14]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[15]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[15]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[16]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[16]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[17]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[17]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[18]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[18]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[19]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[19]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[1]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[1]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[20]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[20]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[21]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[21]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[22]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[22]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[23]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[23]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[24]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[24]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[25]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[25]|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[2]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[2]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[3]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[3]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[4]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[4]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[5]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[5]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[6]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; iCLK_50 ; Rise       ; altera50mhz|counter[6]|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; iCLK_50 ; Rise       ; altera50mhz|counter[7]|clk           ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clockDevider:altera50mhz|counter[0]'                                                                        ;
++--------+--------------+----------------+------------------+-------------------------------------+------------+-------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                               ; Clock Edge ; Target                        ;
++--------+--------------+----------------+------------------+-------------------------------------+------------+-------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; intermitent:register|salida   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; intermitent:register|salida   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|combout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~0|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|Equal0~0|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|Equal0~0|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; altera50mhz|Equal0~4|dataa    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|counter[0]|regout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Rise       ; altera50mhz|counter[0]|regout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clockDevider:altera50mhz|counter[0] ; Fall       ; register|salida|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clockDevider:altera50mhz|counter[0] ; Fall       ; register|salida|clk           ;
++--------+--------------+----------------+------------------+-------------------------------------+------------+-------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; iKEY[*]   ; iCLK_50    ; 3.513 ; 3.513 ; Rise       ; iCLK_50         ;
+;  iKEY[3]  ; iCLK_50    ; 3.513 ; 3.513 ; Rise       ; iCLK_50         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; iKEY[*]   ; iCLK_50    ; -3.198 ; -3.198 ; Rise       ; iCLK_50         ;
+;  iKEY[3]  ; iCLK_50    ; -3.198 ; -3.198 ; Rise       ; iCLK_50         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                               ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; Data Port  ; Clock Port                          ; Rise  ; Fall  ; Clock Edge ; Clock Reference                     ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; oLEDR[*]   ; clockDevider:altera50mhz|counter[0] ; 4.667 ; 4.667 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
+;  oLEDR[16] ; clockDevider:altera50mhz|counter[0] ; 4.667 ; 4.667 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                       ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; Data Port  ; Clock Port                          ; Rise  ; Fall  ; Clock Edge ; Clock Reference                     ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; oLEDR[*]   ; clockDevider:altera50mhz|counter[0] ; 4.667 ; 4.667 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
+;  oLEDR[16] ; clockDevider:altera50mhz|counter[0] ; 4.667 ; 4.667 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                 ;
++--------------------------------------+---------+---------+----------+---------+---------------------+
+; Clock                                ; Setup   ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------+---------+---------+----------+---------+---------------------+
+; Worst-case Slack                     ; -3.362  ; -2.156  ; N/A      ; N/A     ; -1.380              ;
+;  clockDevider:altera50mhz|counter[0] ; 0.379   ; 0.215   ; N/A      ; N/A     ; -0.500              ;
+;  iCLK_50                             ; -3.362  ; -2.156  ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS                      ; -81.363 ; -21.154 ; 0.0      ; 0.0     ; -28.38              ;
+;  clockDevider:altera50mhz|counter[0] ; 0.000   ; 0.000   ; N/A      ; N/A     ; -1.000              ;
+;  iCLK_50                             ; -81.363 ; -21.154 ; N/A      ; N/A     ; -27.380             ;
++--------------------------------------+---------+---------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; iKEY[*]   ; iCLK_50    ; 6.156 ; 6.156 ; Rise       ; iCLK_50         ;
+;  iKEY[3]  ; iCLK_50    ; 6.156 ; 6.156 ; Rise       ; iCLK_50         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; iKEY[*]   ; iCLK_50    ; -3.198 ; -3.198 ; Rise       ; iCLK_50         ;
+;  iKEY[3]  ; iCLK_50    ; -3.198 ; -3.198 ; Rise       ; iCLK_50         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                               ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; Data Port  ; Clock Port                          ; Rise  ; Fall  ; Clock Edge ; Clock Reference                     ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; oLEDR[*]   ; clockDevider:altera50mhz|counter[0] ; 9.396 ; 9.396 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
+;  oLEDR[16] ; clockDevider:altera50mhz|counter[0] ; 9.396 ; 9.396 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                       ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; Data Port  ; Clock Port                          ; Rise  ; Fall  ; Clock Edge ; Clock Reference                     ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+; oLEDR[*]   ; clockDevider:altera50mhz|counter[0] ; 4.667 ; 4.667 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
+;  oLEDR[16] ; clockDevider:altera50mhz|counter[0] ; 4.667 ; 4.667 ; Fall       ; clockDevider:altera50mhz|counter[0] ;
++------------+-------------------------------------+-------+-------+------------+-------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                       ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; clockDevider:altera50mhz|counter[0] ; clockDevider:altera50mhz|counter[0] ; 0        ; 0        ; 0        ; 1        ;
+; clockDevider:altera50mhz|counter[0] ; iCLK_50                             ; 52       ; 52       ; 0        ; 0        ;
+; iCLK_50                             ; iCLK_50                             ; 975      ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; clockDevider:altera50mhz|counter[0] ; clockDevider:altera50mhz|counter[0] ; 0        ; 0        ; 0        ; 1        ;
+; clockDevider:altera50mhz|counter[0] ; iCLK_50                             ; 52       ; 52       ; 0        ; 0        ;
+; iCLK_50                             ; iCLK_50                             ; 975      ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 26    ; 26   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Aug 09 23:42:37 2017
+Info: Command: quartus_sta ledMagic -c ledMagic
+Info: qsta_default_script.tcl version: #1
+Warning (20013): Ignored assignments for entity "DE2_70_Default" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity DE2_70_Default -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity DE2_70_Default -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 2147039 -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE2_70_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE2_70_Default -section_id Top was ignored
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ledMagic.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name iCLK_50 iCLK_50
+    Info (332105): create_clock -period 1.000 -name clockDevider:altera50mhz|counter[0] clockDevider:altera50mhz|counter[0]
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.362
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.362       -81.363 iCLK_50 
+    Info (332119):     0.379         0.000 clockDevider:altera50mhz|counter[0] 
+Info (332146): Worst-case hold slack is -2.156
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.156       -21.154 iCLK_50 
+    Info (332119):     0.391         0.000 clockDevider:altera50mhz|counter[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -27.380 iCLK_50 
+    Info (332119):    -0.500        -1.000 clockDevider:altera50mhz|counter[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.987
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.987       -23.108 iCLK_50 
+    Info (332119):     0.665         0.000 clockDevider:altera50mhz|counter[0] 
+Info (332146): Worst-case hold slack is -1.238
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.238       -15.270 iCLK_50 
+    Info (332119):     0.215         0.000 clockDevider:altera50mhz|counter[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -27.380 iCLK_50 
+    Info (332119):    -0.500        -1.000 clockDevider:altera50mhz|counter[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 433 megabytes
+    Info: Processing ended: Wed Aug 09 23:42:38 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
