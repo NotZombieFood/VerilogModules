@@ -9,20 +9,21 @@
 module clockDevider(
 		input clk,
 		input rst,
-		output pulse
+		output pulse,
+		output test
+
     );
 	reg [25:0] counter;
+	assign test = 1;
 	// 50,000,000 in binary just in case 10111110101111000010000000
-	assign  pulse = (counter == 50000000);
-	
+
 	always @ (posedge clk) begin
-		if (rst)
+		if (!rst|pulse)
 			counter <=0;
 		else
 			counter <= counter+1;
 	end
 
-
-
+assign pulse = (counter ==50000000);
 
 endmodule

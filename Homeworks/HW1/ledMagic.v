@@ -16,8 +16,8 @@ module ledMagic(
     );
 wire enable;
 
-clockDevider altera50mhz (.clk(iCLK_50),.pulse(enable),.rst(iKEY[3]));
-intermitent register (.enable(enable),.salida(oLEDR[17]));
+clockDevider altera50mhz (.clk(iCLK_50),.pulse(enable),.rst(iKEY[3]),.test(oLEDR[17]));
+intermitent register (.enable(enable),.salida(oLEDR[16]));
 
 
 endmodule
