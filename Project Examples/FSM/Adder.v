@@ -29,7 +29,7 @@ always @* begin
 Z=A+Sum;
 if (Reset)
 Sum <= 0;
-end
+end 
 always @ (posedge En) begin
 Sum<=Z ;
 end
