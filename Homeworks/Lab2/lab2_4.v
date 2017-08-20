@@ -25,7 +25,7 @@ always @ * begin
 	
 assign digit1 =  sum -z;
 assign digit2 = cout;
-
+ 
 //Drive for seven segment
   always @ * begin
     case (digit1)
