@@ -19,77 +19,79 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Exercise6(
-    input [5:0] SW,
-    output [6:0] HEX_0,
-    output [6:0] HEX_1
+    input [5:0] switch,
+    output reg [6:0] num0,
+    output reg [6:0] num1
     );
 	 
-	 wire [3:0] unidades;
-	 wire [3:0] decenas;
-	 
-	 if (SW > 60) begin
-		assign decenas = 6;
-		assign unidades = SW-60;
+	 reg [3:0] unidades;
+	 reg [3:0] decenas;
+	always @ (switch) begin
+	 if (switch > 60) begin
+		 decenas = 6;
+		 unidades = switch-60;
 	end
 	
-	else if (SW > 50 ) begin
-		assign decenas = 5;
-		assign unidades = SW-50;	
+	else if (switch > 50 ) begin
+		 decenas = 5;
+		 unidades = switch-50;	
 	end
 	
-	else if (SW > 40 ) begin
-		assign decenas = 4;
-		assign unidades = SW-40;	
+	else if (switch > 40 ) begin
+		 decenas = 4;
+		 unidades = switch-40;	
 	end
 	
-	else if (SW > 30 ) begin
-		assign decenas = 3;
-		assign unidades = SW-30;	
+	else if (switch > 30 ) begin
+		 decenas = 3;
+		 unidades = switch-30;	
 	end
 	
-	else if (SW > 20 ) begin
-		assign decenas = 2;
-		assign unidades = SW-20;	
+	else if (switch > 20 ) begin
+		 decenas = 2;
+		 unidades = switch-20;	
 	end
 	
-	else if (SW > 10 ) begin
-		assign decenas = 5;
-		assign unidades = SW-10;	
+	else if (switch > 10 ) begin
+		 decenas = 5;
+		 unidades = switch-10;	
 	end
 	
 	else begin
-		assign decenas = 0;
-		assign unidades = SW;
+		 decenas = 0;
+		 unidades = switch;
 	end	
+end
+//always for driven digit [0] in the first seven segment display
+  always @ * begin
+    case (unidades)
+      4'b0000: num0 = 7'b1000000; //0 
+      4'b0001: num0 = 7'b1111001; //  1
+      4'b0010: num0 = 7'b0100100; //2
+      4'b0011: num0 = 7'b0110000; //3
+      4'b0100: num0 = 7'b0011001; //4
+      4'b0101: num0 = 7'b0010010; //5
+      4'b0110: num0 = 7'b0000010; //6
+      4'b0111: num0 = 7'b1111000; //7
+      4'b1000: num0 = 7'b0000000; //8
+      4'b1001: num0 = 7'b0011000; //9
+    endcase
+end
 
-always @ * begin
-		case (unidades)
-			4'b0000: HEX_0 = 7'b011111; //0
-			4'b0001: HEX_0 = 7'b0000110; //1
-			4'b0010: HEX_0 = 7'b1011011; //2
-			4'b0011: HEX_0 = 7'b1001111; //3
-			4'b0100: HEX_0 = 7'b1100110; //4
-			4'b0101: HEX_0 = 7'b1101101; //5
-			4'b0110: HEX_0 = 7'b1111101; //6
-			4'b0111: HEX_0 = 7'b0000111; //7
-			4'b1000: HEX_0 = 7'b1111111; //8
-			4'b1001: HEX_0 = 7'b1100111; //9
-		endcase
-	end
-
-always @ * begin
-		case (decenas)
-			4'b0000: HEX_1 = 7'b011111; //0
-			4'b0001: HEX_1 = 7'b0000110; //1
-			4'b0010: HEX_1 = 7'b1011011; //2
-			4'b0011: HEX_1 = 7'b1001111; //3
-			4'b0100: HEX_1 = 7'b1100110; //4
-			4'b0101: HEX_1 = 7'b1101101; //5
-			4'b0110: HEX_1 = 7'b1111101; //6
-			4'b0111: HEX_1 = 7'b0000111; //7
-			4'b1000: HEX_1 = 7'b1111111; //8
-			4'b1001: HEX_1 = 7'b1100111; //9
-		endcase
-	end
+//always for driven digit [1] in the first seven segment display
+  always @ * begin
+    case (decenas)
+      4'b0000: num0 = 7'b1000000; //0 
+      4'b0001: num0 = 7'b1111001; //  1
+      4'b0010: num0 = 7'b0100100; //2
+      4'b0011: num0 = 7'b0110000; //3
+      4'b0100: num0 = 7'b0011001; //4
+      4'b0101: num0 = 7'b0010010; //5
+      4'b0110: num0 = 7'b0000010; //6
+      4'b0111: num0 = 7'b1111000; //7
+      4'b1000: num0 = 7'b0000000; //8
+      4'b1001: num0 = 7'b0011000; //9
+    endcase
+end
 
 endmodule
