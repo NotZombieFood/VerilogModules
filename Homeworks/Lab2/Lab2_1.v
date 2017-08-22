@@ -2,37 +2,52 @@
 
 
 module Lab2_1(
-    input [7:0] switch,
-    input carryIn,
+    input [5:0] switch,
     output reg [6:0] num0,
     output reg [6:0] num1
-
     );
-reg  [7:0] sum;
-reg [3:0] digit1;
-reg [3:0] digit2 ;
-reg [5:0] z;
-reg cout;
- 
-always @ * begin
-if (sum>9) begin
-    z <= 10;
-    cout <= 1;
-  end else begin
-    z <= 0;
-    cout <= 0;
+   
+   reg [3:0] unidades;
+   reg [3:0] decenas;
+  always @ (switch) begin
+   if (switch > 60) begin
+     decenas = 6;
+     unidades = switch-60;
   end
- end
-always @ (switch) begin
-sum = switch[7:4] + switch[3:0] + carryIn;
-digit1 =  sum -z;
-digit2 = cout;
+  
+  else if (switch > 50 ) begin
+     decenas = 5;
+     unidades = switch-50;  
+  end
+  
+  else if (switch > 40 ) begin
+     decenas = 4;
+     unidades = switch-40;  
+  end
+  
+  else if (switch > 30 ) begin
+     decenas = 3;
+     unidades = switch-30;  
+  end
+  
+  else if (switch > 20 ) begin
+     decenas = 2;
+     unidades = switch-20;  
+  end
+  
+  else if (switch > 10 ) begin
+     decenas = 1;
+     unidades = switch-10;  
+  end
+  
+  else begin
+     decenas = 0;
+     unidades = switch;
+  end 
 end
- 
-//Drive for seven segment
 //always for driven digit [0] in the first seven segment display
   always @ * begin
-    case (digit1)
+    case (unidades)
       4'b0000: num0 = 7'b1000000; //0 
       4'b0001: num0 = 7'b1111001; //  1
       4'b0010: num0 = 7'b0100100; //2
@@ -45,9 +60,10 @@ end
       4'b1001: num0 = 7'b0011000; //9
     endcase
 end
- //always for driven digit [0] in the first seven segment display
+
+//always for driven digit [1] in the first seven segment display
   always @ * begin
-    case (digit2)
+    case (decenas)
       4'b0000: num1 = 7'b1000000; //0 
       4'b0001: num1 = 7'b1111001; //  1
       4'b0010: num1 = 7'b0100100; //2
@@ -60,4 +76,5 @@ end
       4'b1001: num1 = 7'b0011000; //9
     endcase
 end
+
 endmodule

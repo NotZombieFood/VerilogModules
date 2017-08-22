@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C70F896) Path("C:/altera/13.0sp1/output_files/") File("Lab2_1.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C70F896) Path("C:/Users/gerar/Desktop/VerilogModules/Homeworks/Files to run on card/LAB2_6/") File("Lab2_1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

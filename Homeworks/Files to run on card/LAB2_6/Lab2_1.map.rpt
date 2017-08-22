@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2_1
-Sun Aug 20 22:36:11 2017
+Mon Aug 21 19:56:25 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 20 22:36:11 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Aug 21 19:56:25 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab2_1                                          ;
 ; Top-level Entity Name              ; Lab2_1                                          ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 59                                              ;
-;     Total combinational functions  ; 59                                              ;
+; Total logic elements               ; 52                                              ;
+;     Total combinational functions  ; 52                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 20                                              ;
@@ -170,16 +170,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 59        ;
+; Estimated Total logic elements              ; 52        ;
 ;                                             ;           ;
-; Total combinational functions               ; 59        ;
+; Total combinational functions               ; 52        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 37        ;
-;     -- 3 input functions                    ; 15        ;
-;     -- <=2 input functions                  ; 7         ;
+;     -- 4 input functions                    ; 28        ;
+;     -- 3 input functions                    ; 20        ;
+;     -- <=2 input functions                  ; 4         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 59        ;
+;     -- normal mode                          ; 52        ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
 ; Total registers                             ; 0         ;
@@ -190,8 +190,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; switch[5] ;
 ; Maximum fan-out                             ; 18        ;
-; Total fan-out                               ; 221       ;
-; Average fan-out                             ; 2.80      ;
+; Total fan-out                               ; 194       ;
+; Average fan-out                             ; 2.69      ;
 +---------------------------------------------+-----------+
 
 
@@ -200,7 +200,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Lab2_1                    ; 59 (59)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Lab2_1             ; work         ;
+; |Lab2_1                    ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Lab2_1             ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,7 +242,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Lab2_1|decenas.0101       ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |Lab2_1|decenas.0001       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -261,7 +261,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Aug 20 22:36:08 2017
+    Info: Processing started: Mon Aug 21 19:56:23 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_1 -c Lab2_1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/gerar/desktop/verilogmodules/homeworks/lab2/lab2_1.v
@@ -299,14 +299,14 @@ Warning (13012): Latch num0[6]$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal switch[0]
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 79 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 59 logic cells
+    Info (21061): Implemented 52 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
     Info: Peak virtual memory: 484 megabytes
-    Info: Processing ended: Sun Aug 20 22:36:11 2017
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Mon Aug 21 19:56:25 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

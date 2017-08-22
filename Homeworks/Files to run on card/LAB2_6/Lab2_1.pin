@@ -118,7 +118,7 @@ GND                          : AA19      : gnd    :                   :         
 GND                          : AA20      : gnd    :                   :         :           :                
 GND_PLL4                     : AA21      : gnd    :                   :         :           :                
 GND_PLL4                     : AA22      : gnd    :                   :         :           :                
-switch[0]                    : AA23      : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AA23      :        :                   :         : 6         :                
 GND*                         : AA24      :        :                   :         : 6         :                
 GND*                         : AA25      :        :                   :         : 6         :                
 GND*                         : AA26      :        :                   :         : 6         :                
@@ -150,8 +150,8 @@ GND                          : AB21      : gnd    :                   :         
 VCCD_PLL4                    : AB22      : power  :                   : 1.2V    :           :                
 GND*                         : AB23      :        :                   :         : 6         :                
 GND*                         : AB24      :        :                   :         : 6         :                
-switch[2]                    : AB25      : input  : 3.3-V LVTTL       :         : 6         : Y              
-switch[1]                    : AB26      : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AB25      :        :                   :         : 6         :                
+GND*                         : AB26      :        :                   :         : 6         :                
 GND                          : AB27      : gnd    :                   :         :           :                
 VCCIO6                       : AB28      : power  :                   : 3.3V    : 6         :                
 GND*                         : AB29      :        :                   :         : 6         :                
@@ -170,7 +170,7 @@ GND*                         : AC11      :        :                   :         
 GND*                         : AC12      :        :                   :         : 8         :                
 GND*                         : AC13      :        :                   :         : 8         :                
 GND*                         : AC14      :        :                   :         : 8         :                
-GND+                         : AC15      :        :                   :         : 7         :                
+switch[0]                    : AC15      : input  : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AC16      :        :                   :         : 7         :                
 GND*                         : AC17      :        :                   :         : 7         :                
 GND*                         : AC18      :        :                   :         : 7         :                
@@ -179,10 +179,10 @@ GND*                         : AC20      :        :                   :         
 GND*                         : AC21      :        :                   :         : 7         :                
 VCCA_PLL4                    : AC22      : power  :                   : 1.2V    :           :                
 GND*                         : AC23      :        :                   :         : 6         :                
-switch[5]                    : AC24      : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AC24      :        :                   :         : 6         :                
 GND*                         : AC25      :        :                   :         : 6         :                
-switch[4]                    : AC26      : input  : 3.3-V LVTTL       :         : 6         : Y              
-switch[3]                    : AC27      : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AC26      :        :                   :         : 6         :                
+GND*                         : AC27      :        :                   :         : 6         :                
 GND*                         : AC28      :        :                   :         : 6         :                
 GND*                         : AC29      :        :                   :         : 6         :                
 GND*                         : AC30      :        :                   :         : 6         :                
@@ -200,7 +200,7 @@ GND*                         : AD11      :        :                   :         
 GND*                         : AD12      :        :                   :         : 8         :                
 GND*                         : AD13      :        :                   :         : 8         :                
 GND*                         : AD14      :        :                   :         : 8         :                
-GND+                         : AD15      :        :                   :         : 7         :                
+switch[5]                    : AD15      : input  : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AD16      :        :                   :         : 7         :                
 num0[6]                      : AD17      : output : 3.3-V LVTTL       :         : 7         : Y              
 GND*                         : AD18      :        :                   :         : 7         :                
@@ -320,8 +320,8 @@ VCCIO8                       : AH11      : power  :                   : 3.3V    
 GND*                         : AH12      :        :                   :         : 8         :                
 GND*                         : AH13      :        :                   :         : 8         :                
 GND+                         : AH14      :        :                   :         : 8         :                
-GND*                         : AH15      :        :                   :         : 8         :                
-GND*                         : AH16      :        :                   :         : 7         :                
+switch[3]                    : AH15      : input  : 3.3-V LVTTL       :         : 8         : N              
+switch[1]                    : AH16      : input  : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AH17      :        :                   :         : 7         :                
 GND*                         : AH18      :        :                   :         : 7         :                
 GND*                         : AH19      :        :                   :         : 7         :                
@@ -349,8 +349,8 @@ GND*                         : AJ10      :        :                   :         
 GND*                         : AJ11      :        :                   :         : 8         :                
 GND*                         : AJ12      :        :                   :         : 8         :                
 GND*                         : AJ13      :        :                   :         : 8         :                
-GND*                         : AJ14      :        :                   :         : 8         :                
-GND*                         : AJ15      :        :                   :         : 8         :                
+switch[4]                    : AJ14      : input  : 3.3-V LVTTL       :         : 8         : N              
+switch[2]                    : AJ15      : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AJ16      :        :                   :         : 7         :                
 GND*                         : AJ17      :        :                   :         : 7         :                
 GND*                         : AJ18      :        :                   :         : 7         :                

@@ -13,14 +13,14 @@ reg cout;
  
 always @ * begin
 if (sum>9) begin
-		z <= 10;
-		cout <= 1;
+		z = 10;
+		cout = 1;
 	end else begin
-		z <= 0;
-		cout <= 0;
+		z = 0;
+		cout = 0;
 	end
  end
-always @ (sw) begin
+always @ * begin
 sum = sw[7:4] + sw[3:0] + carryIn;
 digit1 =  sum -z;
 digit2 = cout;
