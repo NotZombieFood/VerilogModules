@@ -9,33 +9,33 @@ module Lab2_1(
    
    reg [3:0] unidades;
    reg [3:0] decenas;
-  always @ (switch) begin
-   if (switch > 60) begin
+  always @ * begin
+   if (switch >= 60) begin
      decenas = 6;
      unidades = switch-60;
   end
   
-  else if (switch > 50 ) begin
+  else if (switch >= 50 ) begin
      decenas = 5;
      unidades = switch-50;  
   end
   
-  else if (switch > 40 ) begin
+  else if (switch >= 40 ) begin
      decenas = 4;
      unidades = switch-40;  
   end
   
-  else if (switch > 30 ) begin
+  else if (switch >= 30 ) begin
      decenas = 3;
      unidades = switch-30;  
   end
   
-  else if (switch > 20 ) begin
+  else if (switch >= 20 ) begin
      decenas = 2;
      unidades = switch-20;  
   end
   
-  else if (switch > 10 ) begin
+  else if (switch >= 10 ) begin
      decenas = 1;
      unidades = switch-10;  
   end
@@ -45,8 +45,8 @@ module Lab2_1(
      unidades = switch;
   end 
 end
-//always for driven digit [0] in the first seven segment display
-  always @ * begin
+//always for  digit [0] in the first seven segment display
+  always @ (unidades) begin
     case (unidades)
       4'b0000: num0 = 7'b1000000; //0 
       4'b0001: num0 = 7'b1111001; //  1
@@ -61,8 +61,8 @@ end
     endcase
 end
 
-//always for driven digit [1] in the first seven segment display
-  always @ * begin
+//always for  digit [1] in the first seven segment display
+  always @ (decenas) begin
     case (decenas)
       4'b0000: num1 = 7'b1000000; //0 
       4'b0001: num1 = 7'b1111001; //  1
