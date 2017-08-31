@@ -1,9 +1,9 @@
 module	LCD_TEST (	//	Host Side
-					iCLK_50,iSW[7],
+					iCLK_50,iRST_N,
 					//	LCD Side
 					LCD_DATA,LCD_RW,LCD_EN,LCD_RS	);
 //	Host Side
-input			iCLK_50,iSW[7];
+input			iCLK_50,iRST_N;
 //	LCD Side
 output	[7:0]	LCD_DATA;
 output			LCD_RW,LCD_EN,LCD_RS;
@@ -124,8 +124,8 @@ LCD_Controller 		u0	(	//	Host Side
 							.iRS(mLCD_RS),
 							.iStart(mLCD_Start),
 							.oDone(mLCD_Done),
-							.iCLK(iCLK_50),
-							.iRST_N(iSW[7]),
+							.iCLK(iCLK),
+							.iRST_N(iRST_N),
 							//	LCD Interface
 							.LCD_DATA(LCD_DATA),
 							.LCD_RW(LCD_RW),
