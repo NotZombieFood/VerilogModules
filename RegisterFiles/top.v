@@ -38,6 +38,7 @@ always @ * begin
 always @ (posedge clk) begin
 	if (rst)
 		STATE <= 0;
+	
 	else
 		STATE<= NXT_STATE;
 end
