@@ -23,7 +23,7 @@ wire sum;
 
 
 //FSM begin
-FSM fsm1 (.go(go),.rst(rst),.counterflag(countflag),.STATE(STATE));
+FSM fsm1 (.go(go),.rst(rst),.counterflag(countflag),.STATE(STATE),.clk(clk));
 //FSM ending
 
 //Controller begin	
@@ -44,7 +44,7 @@ counter CounterA (.clock(clk),.en_count(enable_ABS),.rst(reset_sum),.compare(cou
 //register begin
 always @(posedge clk) begin
         carryIn <= rst ? 0 : carryOut;
-        shiftSum <= countflag ? carryOut : sum;      
+        shiftSum <= countflag ? carryOut : sum; 
 end
 //Register ending
 
