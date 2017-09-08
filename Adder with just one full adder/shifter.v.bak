@@ -1,4 +1,4 @@
-module shifter(
+module shift(
   input [7:0] A,
     input load,
     input enable,

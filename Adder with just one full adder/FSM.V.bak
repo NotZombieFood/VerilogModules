@@ -1,4 +1,4 @@
-module FSM
+module fsm
   (input clk,
    input go,
    input rst,

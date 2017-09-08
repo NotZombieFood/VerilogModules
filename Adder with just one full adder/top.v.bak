@@ -33,7 +33,7 @@ assign enable_ABS = ((STATE==0)&go)|(STATE==1)|((STATE==1)&countflag);
 //Controller ending
 
 //Datapath components begin
-shifter shifterA(.load(load_AB),.enable(enable_ABS),.A(a),.shift(shiftA),.rst(rst),.clk(clk));
+shifter shifterA(.load(load_AB),.enable(enable_ABS),.A(a),.shift(shiftA),.rst(rst),,.clk(clk));
 shifter shifterB(.load(load_AB),.enable(enable_ABS),.A(b),.shift(shiftB),.rst(rst),.clk(clk));
 shifter2 shifterC(.enable(enable_ABS),.A(shiftSum),.shift(sumFinal),.rst(rst),.clk(clk));
 FA myMagicAdder (.x(shiftA),.y(shiftB),.cin(carryIn),.A(sum),.cout(carryOut));
@@ -42,8 +42,8 @@ counter CounterA (.clock(clk),.en_count(enable_ABS),.rst(reset_sum),.compare(cou
 
 //Registers for the carry in and value that we get into the final register (sum) (we dont have a reset bc the design doesnt specifies it)
 //register begin
-always @(posedge clk) begin
-        carryIn <= rst ? 0 : carryOut;
+always @(posedge clock) begin
+        carryIn <= reset ? 0 : carryOut;
         shiftSum <= countflag ? carryOut : sum;      
 end
 //Register ending
