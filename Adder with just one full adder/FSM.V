@@ -1,9 +1,33 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    07:27:26 09/08/2017 
+// Design Name: 
+// Module Name:    FSM 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module FSM
   (input clk,
    input go,
-   input rst,
+   input Mrst,
    input counterflag,
-   output reg [1:0] STATE
+   output reg [1:0] STATE,
+	output reg rst_sum,
+	output reg enable,
+	output reg load,
+	output reg rst_reg
    );
 
 //internal wires begin
@@ -29,11 +53,46 @@ always @ * begin
 	endcase
 end
 always @ (posedge clk) begin
-	if (~rst)
+	if (Mrst)
 		STATE <= 0;
 	else
 		STATE<= NXT_STATE;
 end
+
+always @ * begin
+	if (Mrst == 1 ) begin
+		rst_sum = 1;
+		rst_reg=1;
+		load = 0;
+		enable = 0;
+	end
+	else begin
+	case (STATE)
+		0: begin
+		if (go == 1) begin
+			rst_sum=1;
+			enable = 1;	
+			load = 1;
+			rst_reg=0;
+			end
+		else rst_reg=1;
+		end
+		1: begin//initial
+			rst_sum = 0;
+			rst_reg=0;
+			enable = 1;
+			load = 0;
+		end
+		2: begin// S0
+			rst_sum = 0;
+			rst_reg=0;
+			load = 0;
+			enable = 0;
+		end
+	endcase
+	end
+end
+
 
 
 endmodule

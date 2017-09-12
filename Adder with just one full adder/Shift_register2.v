@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    07:22:35 09/05/2017 
+// Create Date:    07:59:35 09/05/2017 
 // Design Name: 
-// Module Name:    Shifter 
+// Module Name:    Shift_register2 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,34 +18,30 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Shift_register(
-    input [7:0] A,
-    input load,
+module Shift_register2(
+    input  A,
+    input rst,
     input enable,
     input clk,
-	 input rst,
-	 output shift
+    output [8:0] shift
     );
 	 
-	 reg [7:0] register;
+	 reg [8:0] register;
+	 wire [8:0] wire_shift;
 	 
-	 always @ ( posedge clk) begin
+	 always @ ( posedge clk ) begin
 		if ( rst == 1 ) begin
 			register = 0;
 		end
 		else begin
 			if ( enable == 1 ) begin
-				if ( load == 1 ) begin
-					register = A;
-				end
-				else begin
-					register = register >> 1;
-				end
+				register = wire_shift;
 			end
 		end
 	 end
 	 
-	 assign shift = register[0];
-
+	 assign wire_shift[8] = A;
+	 assign wire_shift[7:0] = register[8:1];
+	 assign shift = register;
 
 endmodule

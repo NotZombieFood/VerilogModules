@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    07:33:54 09/08/2017 
+// Create Date:    19:16:28 05/09/2017 
 // Design Name: 
-// Module Name:    counter 
+// Module Name:    DataMemory 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,27 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter(input clk, input rst, input en_count, output compare);
-reg [3:0] count;
-always @(posedge clk) begin
-    if (rst) count =0;
-	 else begin
-		if (en_count)
-			count <= count + 1;
-	end
-end
-assign compare = (count==8);
+module DataMemory(
+    input [31:0] Adress,
+    input [31:0] WriteData,
+    input MemWrite,
+    input MemRead,
+	 input clk,
+    output [31:0] ReadData
+    );
+	 
+	 wire [31:0] read;
+	 
+	 assign ReadData = MemRead ? read:0;
+	 
+		Ram r1(
+		.a(Adress[5:0]),
+		.d(WriteData),
+		.we(MemWrite),
+		.clk(clk),
+		.spo(read)
+	);
+	 
+
+
 endmodule

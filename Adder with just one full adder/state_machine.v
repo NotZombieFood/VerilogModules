@@ -1,4 +1,24 @@
-module fsm
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    07:13:37 09/08/2017 
+// Design Name: 
+// Module Name:    state_machine 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module FSM
   (input clk,
    input go,
    input rst,

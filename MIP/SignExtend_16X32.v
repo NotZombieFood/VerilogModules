@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    07:33:54 09/08/2017 
+// Create Date:    23:39:39 05/09/2017 
 // Design Name: 
-// Module Name:    counter 
+// Module Name:    SignExtend_16X32 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter(input clk, input rst, input en_count, output compare);
-reg [3:0] count;
-always @(posedge clk) begin
-    if (rst) count =0;
-	 else begin
-		if (en_count)
-			count <= count + 1;
-	end
-end
-assign compare = (count==8);
+module SignExtend_16X32(
+    input [15:0] Input_16,
+    output [31:0] Output_32
+    );
+	 
+	 assign Output_32 = {{16{Input_16[15]}},Input_16[15:0]};
+
+
 endmodule

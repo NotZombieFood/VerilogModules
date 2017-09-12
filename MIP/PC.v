@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    07:33:54 09/08/2017 
+// Create Date:    22:03:20 05/09/2017 
 // Design Name: 
-// Module Name:    counter 
+// Module Name:    PC 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter(input clk, input rst, input en_count, output compare);
-reg [3:0] count;
-always @(posedge clk) begin
-    if (rst) count =0;
-	 else begin
-		if (en_count)
-			count <= count + 1;
-	end
-end
-assign compare = (count==8);
+module PC(
+    input [31:0] Adress,
+    output [31:0] Word
+    );
+	 
+	 Rom r1(
+	 .a(Adress[5:0]),
+	 .spo(Word)
+	 );
+
+
 endmodule

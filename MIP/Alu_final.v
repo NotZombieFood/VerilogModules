@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    07:33:54 09/08/2017 
+// Create Date:    17:25:11 05/09/2017 
 // Design Name: 
-// Module Name:    counter 
+// Module Name:    Alu_final 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,30 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter(input clk, input rst, input en_count, output compare);
-reg [3:0] count;
-always @(posedge clk) begin
-    if (rst) count =0;
-	 else begin
-		if (en_count)
-			count <= count + 1;
-	end
-end
-assign compare = (count==8);
+module Alu_final(
+    input [31:0] a,
+    input [31:0] b,
+    input [1:0] Alu_op,
+    input [5:0] funct,
+    output zero,
+    output [31:0] result
+    );
+	 
+	 wire [5:0] control;
+	 
+	 ALU A1(
+	 .a(a),
+	 .b(b),
+	 .ctrl(control),
+	 .zero (zero),
+	 .result (result)
+	 );
+	 
+	 Alu_ctrl C2(
+	 .Alu_op(Alu_op),
+	 .funct(funct),
+	 .ctrl(control)
+	 );
+
+
 endmodule
