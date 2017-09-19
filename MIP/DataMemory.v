@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module DataMemory(
-    input [31:0] Adress,
+    input [31:0] Address,
     input [31:0] WriteData,
     input MemWrite,
     input MemRead,
@@ -30,14 +30,38 @@ module DataMemory(
 	 wire [31:0] read;
 	 
 	 assign ReadData = MemRead ? read:0;
-	 
-		Ram r1(
-		.a(Adress[5:0]),
+	 /*
+		RAM_1 r1(
+		.a(Address[5:0]),
 		.d(WriteData),
 		.we(MemWrite),
 		.clk(clk),
 		.spo(read)
 	);
+	*/
+	
+	
+	
+		RAM_2 r1(
+		.a(Address[9:0]),
+		.d(WriteData),
+		.we(MemWrite),
+		.clk(clk),
+		.spo(read)
+	);
+	
+	 
+	/*
+		RAM_3 r1(
+		.a(Address[5:0]),
+		.d(WriteData),
+		.we(MemWrite),
+		.clk(clk),
+		.spo(read)
+	);
+	*/
+	
+	
 	 
 
 

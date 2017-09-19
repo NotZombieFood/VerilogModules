@@ -24,6 +24,7 @@ module RegisterBank(
     input [4:0] ReadRegister2,
     input [4:0] WriteRegister,
     input clk,
+	 input rst,
     input [31:0] WriteData,
     output [31:0] ReadData1,
     output [31:0] ReadData2
@@ -32,42 +33,6 @@ module RegisterBank(
 	 reg [31:0] reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7, reg8, reg9, reg10,
 					reg11, reg12, reg13, reg14, reg15, reg16, reg17, reg18, reg19, reg20,
 					reg21, reg22, reg23, reg24, reg25, reg26, reg27, reg28, reg29, reg30, reg31;
-					
-	//Iniciar Valores registers
-	initial begin
-		reg0 = 0;
-		reg1 = 0;
-		reg2 = 0;
-		reg3 = 0;
-		reg4 = 0;
-		reg5 = 0;
-		reg6 = 0;
-		reg7 = 0;
-		reg8 = 0;
-		reg9 = 0;
-		reg10 = 0;
-		reg11 = 0;
-		reg12 = 0;
-		reg13 = 0;
-		reg14 = 0;
-		reg15 = 0;
-		reg16 = 0;
-		reg17 = 0;
-		reg18 = 0;
-		reg19 = 0;
-		reg20 = 0;
-		reg21 = 0;
-		reg22 = 0;
-		reg23 = 0;
-		reg24 = 0;
-		reg25 = 0;
-		reg26 = 0;
-		reg27 = 0;
-		reg28 = 0;
-		reg29 = 0;
-		reg30 = 0;
-		reg30 = 0;
-	end
 	
 	
 	assign ReadData1 = (ReadRegister1 == 0) ? reg0 :
@@ -137,41 +102,77 @@ module RegisterBank(
 					       (ReadRegister2 == 31) ? reg31 :0;
 							 
 		always @(posedge clk) begin
-			if (RegWrite)
-				case(WriteRegister)
-					0: reg0 = WriteData;
-					1: reg1 = WriteData;
-					2: reg2 = WriteData;
-					3: reg3 = WriteData;
-					4: reg4 = WriteData;
-					5: reg5 = WriteData;
-					6: reg6 = WriteData;
-					7: reg7 = WriteData;
-					8: reg8 = WriteData;
-					9: reg9 = WriteData;
-					10: reg10 = WriteData;
-					11: reg11 = WriteData;
-					12: reg12 = WriteData;
-					13: reg13 = WriteData;
-					14: reg14 = WriteData;
-					15: reg15 = WriteData;
-					16: reg16 = WriteData;
-					17: reg17 = WriteData;
-					18: reg18 = WriteData;
-					19: reg19 = WriteData;
-					20: reg20 = WriteData;
-					21: reg21 = WriteData;
-					22: reg22 = WriteData;
-					23: reg23 = WriteData;
-					24: reg24 = WriteData;
-					25: reg25 = WriteData;
-					26: reg26 = WriteData;
-					27: reg27 = WriteData;
-					28: reg28 = WriteData;
-					29: reg29 = WriteData;
-					30: reg30 = WriteData;
-					31: reg31 = WriteData;
+			if ( rst == 1 ) begin
+				reg0 = 0;
+				reg1 = 0;
+				reg2 = 0;
+				reg3 = 0;
+				reg4 = 0;
+				reg5 = 0;
+				reg6 = 0;
+				reg7 = 0;
+				reg8 = 0;
+				reg9 = 0;
+				reg10 = 0;
+				reg11 = 0;
+				reg12 = 0;
+				reg13 = 0;
+				reg14 = 0;
+				reg15 = 0;
+				reg16 = 0;
+				reg17 = 0;
+				reg18 = 0;
+				reg19 = 0;
+				reg20 = 0;
+				reg21 = 0;
+				reg22 = 0;
+				reg23 = 0;
+				reg24 = 0;
+				reg25 = 0;
+				reg26 = 0;
+				reg27 = 0;
+				reg28 = 0;
+				reg29 = 0;
+				reg30 = 0;
+				reg31 = 0;
+			end
+			else begin
+				if (RegWrite)
+					case(WriteRegister)
+						0: reg0 = WriteData;
+						1: reg1 = WriteData;
+						2: reg2 = WriteData;
+						3: reg3 = WriteData;
+						4: reg4 = WriteData;
+						5: reg5 = WriteData;
+						6: reg6 = WriteData;
+						7: reg7 = WriteData;
+						8: reg8 = WriteData;
+						9: reg9 = WriteData;
+						10: reg10 = WriteData;
+						11: reg11 = WriteData;
+						12: reg12 = WriteData;
+						13: reg13 = WriteData;
+						14: reg14 = WriteData;
+						15: reg15 = WriteData;
+						16: reg16 = WriteData;
+						17: reg17 = WriteData;
+						18: reg18 = WriteData;
+						19: reg19 = WriteData;
+						20: reg20 = WriteData;
+						21: reg21 = WriteData;
+						22: reg22 = WriteData;
+						23: reg23 = WriteData;
+						24: reg24 = WriteData;
+						25: reg25 = WriteData;
+						26: reg26 = WriteData;
+						27: reg27 = WriteData;
+						28: reg28 = WriteData;
+						29: reg29 = WriteData;
+						30: reg30 = WriteData;
+						31: reg31 = WriteData;
 				endcase
+			end
 		end
 
 

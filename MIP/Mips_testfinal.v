@@ -26,6 +26,7 @@ module Mips_testfinal;
 
 	// Inputs
 	reg clk;
+	reg rst;
 
 	// Outputs
 	wire [31:0] direccion;
@@ -34,7 +35,8 @@ module Mips_testfinal;
 
 	// Instantiate the Unit Under Test (UUT)
 	MIPS uut (
-		.clk(clk), 
+		.clk(clk),
+		.rst(rst),
 		.direccion(direccion), 
 		.palabra(palabra), 
 		.leer_dato(leer_dato)
@@ -43,6 +45,10 @@ module Mips_testfinal;
 	initial begin
 		// Initialize Inputs
 		clk = 0;
+		rst = 1;
+		
+		#20;
+		rst = 0;
 
 		// Wait 100 ns for global reset to finish
 		#150;

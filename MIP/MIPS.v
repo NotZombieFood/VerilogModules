@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module MIPS(
     input clk,
+	 input rst,
 	 output [31:0] direccion,
 	 output [31:0] palabra,
 	 output [31:0] leer_dato
@@ -27,26 +28,25 @@ module MIPS(
 	 
 	 wire [31:0] Word; //salida del pc
 	 wire [31:0] Word_4;  //salida adder+4
-	 wire [31:0] Adress_branch; //salida Adder Branch
-	 wire [31:0] Adress_final;  //Salida mux branch
-	 wire [25:0] Adress_jump;  //Direccion a saltar con adress
-	 wire [31:0] Adress_jump_final;  //Direccion final del jump
+	 wire [31:0] Address_branch; //salida Adder Branch
+	 wire [31:0] Address_final;  //Salida mux branch
+	 wire [25:0] Address_jump;  //Direccion a saltar con adress
+	 wire [31:0] Address_jump_final;  //Direccion final del jump
 	 wire RegDst;  //Salidas del control
 	 wire Branch;
 	 wire MemRead;
 	 wire MemtoReg;
-	 wire MemWrite;
 	 wire [1:0] Alu_op;
 	 wire AluSrc;
 	 wire RegWrite;
-	 wire [4:0] Adress1;
-	 wire [4:0] Adress2;
-	 wire[4:0] Adress3;
+	 wire [4:0] Address1;
+	 wire [4:0] Address2;
+	 wire[4:0] Address3;
 	 wire [15:0] extender;
 	 wire J; //Salida si es tipo J
 	 wire [31:0] ReadData1;  //Salida banco de registros
 	 wire [31:0] ReadData2;  //Salida banco de registros
-	 wire [4:0] Mux_Adress3; //Mux antes del banco de registros
+	 wire [4:0] Mux_Address3; //Mux antes del banco de registros
 	 wire [31:0] Extend_32;  //Salida extender 32 bits
 	 wire [31:0] Shifter_32;  //Salida del shifter
 	 wire [31:0] Mux_Alu;  // Salida de mux antes del alu
@@ -55,16 +55,16 @@ module MIPS(
 	 wire And; //Salida del And
 	 wire [31:0] Data_DataMemory;  //Salida del DataMemory
 	 wire [31:0] WriteData;  //Datos que se escriben en el banco de registros
-	 reg [31:0] Adress;  //Entrada pc
+	 reg [31:0] Address;  //Entrada pc
 	 
 	 
-	 PC PC(
-	 .Adress(Adress),
+	 InstructionMemory InstructionMemory(
+	 .Address(Address),
 	 .Word(Word)
 	 );
 	 
-	 InstructionMemory InstructionMemory(
-	.ReadAdress(Word),
+	 ControlInstructionMemory ControlInstructionMemory(
+	.ReadAddress(Word),
    .RegDst(RegDst),
    .Branch(Branch),
    .MemRead(MemRead),
@@ -74,24 +74,25 @@ module MIPS(
 	.AluSrc(AluSrc),
 	.RegWrite(RegWrite),
 	.J(J),
-	.Adress1(Adress1),
-	.Adress2(Adress2),
-	.Adress3(Adress3),
+	.Address1(Address1),
+	.Address2(Address2),
+	.Address3(Address3),
 	.extender(extender),
-	.AdressJ(Adress_jump)
+	.AddressJ(Address_jump)
 	 );
 	 
 	 SignExtend_26X32 SignExtend_26x32(
-	 .Input_26(Adress_jump),
-	 .Output_32(Adress_jump_final)
+	 .Input_26(Address_jump),
+	 .Output_32(Address_jump_final)
 	 );
 	 
 	 RegisterBank RegisterBank(
 	 .RegWrite(RegWrite),
-	 .ReadRegister1(Adress1),
-	 .ReadRegister2(Adress2),
-	 .WriteRegister(Mux_Adress3),
+	 .ReadRegister1(Address1),
+	 .ReadRegister2(Address2),
+	 .WriteRegister(Mux_Address3),
 	 .clk(clk),
+	 .rst(rst),
 	 .WriteData(WriteData), 
 	 .ReadData1(ReadData1),
 	 .ReadData2(ReadData2)
@@ -117,7 +118,7 @@ module MIPS(
 	 );
 	 
 	 DataMemory DataMemory(
-	 .Adress(result),
+	 .Address(result),
 	 .WriteData(ReadData2),
 	 .MemWrite(MemWrite),
 	 .MemRead(MemRead),
@@ -125,18 +126,22 @@ module MIPS(
 	 .ReadData(Data_DataMemory)
 	 );
 	 
-	 assign Word_4 = Adress + 4;
-	 assign Adress_branch = Word_4 + Shifter_32; 
-	 assign Adress_final = (And) ? Adress_branch:Word_4;              //Parte de arriba
-	 always @(posedge clk) begin
-		Adress <= (J) ? Adress_jump_final:Adress_final; 
-	 end
+	 assign Word_4 = Address + 4;
+	 assign Address_branch = Word_4 + Shifter_32; 
+	 assign Address_final = (And) ? Address_branch:Word_4;              //Parte de arriba
 	 
-	 assign Mux_Adress3 = (RegDst) ? Adress3:Adress2;
+	 //Program Counter
+	 always @(posedge clk) begin
+		if (rst == 1 ) Address <= 0;
+		else Address <= (J) ? Address_jump_final:Address_final; 
+	 end
+	 //
+	 
+	 assign Mux_Address3 = (RegDst) ? Address3:Address2;
 	 
 	 assign Mux_Alu = (AluSrc) ? Extend_32:ReadData2;
 	 
-	 assign direccion = Adress;
+	 assign direccion = Address;
 	 
 	 assign And = (Branch & zero);
 	 
@@ -146,13 +151,4 @@ module MIPS(
 	 
 	 assign leer_dato = WriteData;
 	 
-	 
-	 // poner un reset al flop del Adress....
-	 
-	 //  cambiar el nombre de Adress... por Address 
-	 //initial begin
-	 //Adress = 0;
-	 //end
-
-
 endmodule

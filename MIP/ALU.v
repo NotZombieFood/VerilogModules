@@ -40,4 +40,4 @@ module ALU(
 	
 		assign zero = (result == 0);
 
-endmodul
+endmodule
