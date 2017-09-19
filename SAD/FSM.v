@@ -23,9 +23,9 @@ module FSM(
 	 input clk,
 	 input comp,
 	 input Mrst,
-    output rst,
-    output en,
-	 output en_reg
+    output reg rst,
+    output reg en,
+	 output reg en_reg
     );
 	 
 reg [2:0] NXT_STATE;
@@ -48,6 +48,7 @@ always @ * begin
 			NXT_STATE = 3'b010;
 		3'b100:      //S4
 			NXT_STATE = 3'b000;
+		default: NXT_STATE = 3'b000;
 	endcase
 end
 
@@ -91,6 +92,11 @@ always @ * begin
 			rst=0;
 			en=0;
 			en_reg=1;
+		end
+		default: begin
+			rst=1;
+			en=0;
+			en_reg=0;
 		end
 	endcase
 	end
