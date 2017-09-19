@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 29 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 29 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 30 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 30 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 31 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 31 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 32 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 32 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 33 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 33 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 34 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 34 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 35 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 35 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 36 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 36 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 37 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 37 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 38 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX1&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 38 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 44 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 44 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 45 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 45 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 46 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 46 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 47 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 47 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 48 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 48 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 49 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 49 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 50 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 50 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 51 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 51 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 52 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 52 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 53 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;HEX2&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="44" delta="new" ><arg fmt="%s" index="1">&quot;Exercise1.v&quot; line 53 </arg>Illegal left hand side of blocking assignment
+</msg>
+
+</messages>
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/Serial_Adder/DataPath.xst" -ofn "D:/Verilog/Serial_Adder/DataPath.syr" 
+xst -intstyle ise -ifn "D:/Verilog/Serial_Adder/DataPath.xst" -ofn "D:/Verilog/Serial_Adder/DataPath.syr" 

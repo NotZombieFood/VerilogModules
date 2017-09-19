@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Verilog/Prueba/fulladder.xst" -ofn "D:/Verilog/Prueba/fulladder.syr" 

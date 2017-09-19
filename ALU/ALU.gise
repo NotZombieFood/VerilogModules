@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ALU.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Display.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Display.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Display.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Divisor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Divisor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Divisor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Divisor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Divisor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Divisor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Divisor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Divisor.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Divisor_6bits.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Divisor_6bits.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Divisor_6bits.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Divisor_6bits.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Divisor_6bits.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Divisor_6bits.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Divisor_6bits_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Divisor_6bits_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Divisor_6bits_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Divisor_Test_final_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Divisor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Divisor_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Divisor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Multiplicador.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Multiplicador.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplicador.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Multiplicador.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Multiplicador.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Multiplicador_6bits.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Multiplicador_6bits.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Multiplicador_6bits.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Multiplicador_6bits.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador_6bits.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplicador_6bits.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Multiplicador_6bits.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Multiplicador_6bits.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Multiplicador_6bits_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Multiplicador_6bits_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Multiplicador_6bits_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Multiplicador_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Multiplicador_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Multiplicador_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Multiplicador_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Multiplicador_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Twos_complements_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Twos_complements_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_Twos_complements_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Twos_complements_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_multiplicador_beh.prj"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_multiplicador_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TwosComplement.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="TwosComplement.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="TwosComplement.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TwosComplement_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="divisor_test2_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test1_divisor_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test1_divisor_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test1_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_contador_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_contador_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_contador_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_divisor6bits_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_divisor_6bits_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_mul_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_mul_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multiplicador6bits_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_multiplicador6bits_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_multiplicador6bits_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multiplicador6bits_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1503979188" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1503979188">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504009584" xil_pn:in_ck="6674643252786759274" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1504009583">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU.v"/>
+      <outfile xil_pn:name="Display.v"/>
+      <outfile xil_pn:name="Display_12bits.v"/>
+      <outfile xil_pn:name="Divisor.v"/>
+      <outfile xil_pn:name="Divisor_6bits.v"/>
+      <outfile xil_pn:name="Divisor_Test_final.v"/>
+      <outfile xil_pn:name="Multiplicador.v"/>
+      <outfile xil_pn:name="Multiplicador_6bits.v"/>
+      <outfile xil_pn:name="Test_Twos_complements.v"/>
+      <outfile xil_pn:name="TwosComplement.v"/>
+      <outfile xil_pn:name="divisor_test2.v"/>
+      <outfile xil_pn:name="test1.v"/>
+      <outfile xil_pn:name="test1_divisor.v"/>
+      <outfile xil_pn:name="test_contador.v"/>
+      <outfile xil_pn:name="test_divisor6bits.v"/>
+      <outfile xil_pn:name="test_divisor_6bits.v"/>
+      <outfile xil_pn:name="test_mul.v"/>
+      <outfile xil_pn:name="test_multiplicador6bits.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1504009346" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9090387544939809751" xil_pn:start_ts="1504009346">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504009346" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1971220912092043389" xil_pn:start_ts="1504009346">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1503979188" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3015781745532846460" xil_pn:start_ts="1503979188">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504009584" xil_pn:in_ck="6674643252786759274" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1504009584">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU.v"/>
+      <outfile xil_pn:name="Display.v"/>
+      <outfile xil_pn:name="Display_12bits.v"/>
+      <outfile xil_pn:name="Divisor.v"/>
+      <outfile xil_pn:name="Divisor_6bits.v"/>
+      <outfile xil_pn:name="Divisor_Test_final.v"/>
+      <outfile xil_pn:name="Multiplicador.v"/>
+      <outfile xil_pn:name="Multiplicador_6bits.v"/>
+      <outfile xil_pn:name="Test_Twos_complements.v"/>
+      <outfile xil_pn:name="TwosComplement.v"/>
+      <outfile xil_pn:name="divisor_test2.v"/>
+      <outfile xil_pn:name="test1.v"/>
+      <outfile xil_pn:name="test1_divisor.v"/>
+      <outfile xil_pn:name="test_contador.v"/>
+      <outfile xil_pn:name="test_divisor6bits.v"/>
+      <outfile xil_pn:name="test_divisor_6bits.v"/>
+      <outfile xil_pn:name="test_mul.v"/>
+      <outfile xil_pn:name="test_multiplicador6bits.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1504009588" xil_pn:in_ck="6674643252786759274" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5874235012255982178" xil_pn:start_ts="1504009584">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="test_multiplicador6bits_beh.prj"/>
+      <outfile xil_pn:name="test_multiplicador6bits_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1504009589" xil_pn:in_ck="-8494199890313735411" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4686853446306380737" xil_pn:start_ts="1504009588">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="test_multiplicador6bits_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1503809572" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1503809572">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008843" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="956115024994879299" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008843" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3015781745532846460" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008843" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008843" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8250514965208190313" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008843" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5702940744460053484" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008843" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4171514584131182258" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1504008952" xil_pn:in_ck="812815882665893795" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-8306330707303209938" xil_pn:start_ts="1504008843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <outfile xil_pn:name="Multiplicador_6bits.lso"/>
+      <outfile xil_pn:name="Multiplicador_6bits.ngc"/>
+      <outfile xil_pn:name="Multiplicador_6bits.ngr"/>
+      <outfile xil_pn:name="Multiplicador_6bits.prj"/>
+      <outfile xil_pn:name="Multiplicador_6bits.stx"/>
+      <outfile xil_pn:name="Multiplicador_6bits.syr"/>
+      <outfile xil_pn:name="Multiplicador_6bits.xst"/>
+      <outfile xil_pn:name="Multiplicador_6bits_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1503962230" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3410226553606739262" xil_pn:start_ts="1503962230">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+  </transforms>
+
+</generated_project>

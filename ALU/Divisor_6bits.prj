@@ -1,0 +1,4 @@
+verilog work "TwosComplement.v"
+verilog work "Divisor.v"
+verilog work "Display.v"
+verilog work "Divisor_6bits.v"

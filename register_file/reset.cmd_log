@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/register_file/reset.xst" -ofn "D:/Verilog/register_file/reset.syr" 
+xst -intstyle ise -ifn "D:/Verilog/register_file/reset.xst" -ofn "D:/Verilog/register_file/reset.syr" 

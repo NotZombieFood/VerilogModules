@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/ALU/Multiplicador.xst" -ofn "D:/Verilog/ALU/Multiplicador.syr" 
+xst -intstyle ise -ifn "D:/Verilog/ALU/Multiplicador.xst" -ofn "D:/Verilog/ALU/Multiplicador.syr" 

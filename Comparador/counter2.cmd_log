@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Verilog/Comparador/counter2.xst" -ofn "D:/Verilog/Comparador/counter2.syr" 

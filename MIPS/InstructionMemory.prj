@@ -1,0 +1,2 @@
+verilog work "Control.v"
+verilog work "InstructionMemory.v"

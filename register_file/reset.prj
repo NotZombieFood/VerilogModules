@@ -1,0 +1,4 @@
+verilog work "State_Machine.v"
+verilog work "reg_file.v"
+verilog work "dataPath.v"
+verilog work "reset.v"

@@ -1,0 +1,5 @@
+set -tmpdir "D:/Verilog/Serial_Adder/xst/projnav.tmp"
+set -xsthdpdir "D:/Verilog/Serial_Adder/xst"
+elaborate
+-ifn FSM.prj
+-ifmt mixed

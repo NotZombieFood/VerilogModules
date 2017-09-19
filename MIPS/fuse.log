@@ -1,0 +1,49 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Verilog/MIPS/Mips_testfinal_isim_beh.exe -prj D:/Verilog/MIPS/Mips_testfinal_beh.prj work.Mips_testfinal work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Verilog/MIPS/ipcore_dir/ROM_3.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/ipcore_dir/RAM_3.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/Control.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/Alu_ctrl.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/ALU.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/SignExtend_26X32.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/SignExtend_16X32.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/Shifter_2.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/RegisterBank.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/InstructionMemory.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/DataMemory.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/ControlInstructionMemory.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/Alu_final.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/MIPS.v" into library work
+Analyzing Verilog file "D:/Verilog/MIPS/Mips_testfinal.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/Verilog/MIPS/Alu_final.v" Line 35: Size mismatch in connection of port <ctrl>. Formal port size is 4-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "D:/Verilog/MIPS/Alu_final.v" Line 43: Size mismatch in connection of port <ctrl>. Formal port size is 4-bit while actual signal size is 6-bit.
+Completed static elaboration
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module ROM_3
+Compiling module InstructionMemory
+Compiling module Control
+Compiling module ControlInstructionMemory
+Compiling module SignExtend_26X32
+Compiling module RegisterBank
+Compiling module SignExtend_16X32
+Compiling module Shifter_2
+Compiling module ALU
+Compiling module Alu_ctrl
+Compiling module Alu_final
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module RAM_3
+Compiling module DataMemory
+Compiling module MIPS
+Compiling module Mips_testfinal
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable D:/Verilog/MIPS/Mips_testfinal_isim_beh.exe
+Fuse Memory Usage: 30564 KB
+Fuse CPU Usage: 1140 ms

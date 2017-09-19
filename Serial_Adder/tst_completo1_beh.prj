@@ -1,0 +1,8 @@
+verilog work "Shift_register2.v"
+verilog work "Shifter.v"
+verilog work "FSM.v"
+verilog work "Display_12bits.v"
+verilog work "counter.v"
+verilog work "DataPath.v"
+verilog work "tst_completo1.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

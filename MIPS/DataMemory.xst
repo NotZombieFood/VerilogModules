@@ -1,0 +1,5 @@
+set -tmpdir "D:/Verilog/MIPS/xst/projnav.tmp"
+set -xsthdpdir "D:/Verilog/MIPS/xst"
+elaborate
+-ifn DataMemory.prj
+-ifmt mixed

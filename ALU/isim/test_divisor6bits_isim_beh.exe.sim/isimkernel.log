@@ -1,0 +1,31 @@
+Command line:
+   test_divisor6bits_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49897
+
+Tue Aug 29 07:18:55 2017
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 684.11 Meg
+
+ Total Signals          : 41
+ Total Nets             : 166
+ Total Signal Drivers   : 28
+ Total Blocks           : 7
+ Total Primitive Blocks : 4
+ Total Processes        : 45
+ Total Traceable Variables  : 43
+ Total Scalar Nets and Variables : 408
+Total Line Count : 240
+Total Line Count : 240
+Total Line Count : 240
+
+ Total Simulation Time: 0.21875 sec
+
+ Current Memory Usage: 684.11 Meg
+
+Tue Aug 29 07:22:04 2017
+

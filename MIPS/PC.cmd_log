@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Verilog/MIPS/PC.xst" -ofn "D:/Verilog/MIPS/PC.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MIPS/PC.xst" -ofn "D:/Verilog/MIPS/PC.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MIPS/PC.xst" -ofn "D:/Verilog/MIPS/PC.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MIPS/PC.xst" -ofn "D:/Verilog/MIPS/PC.syr" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Verilog/Clk_div/test_clkdiv_isim_beh.exe" -prj "D:/Verilog/Clk_div/test_clkdiv_beh.prj" "work.test_clkdiv" "work.glbl" 

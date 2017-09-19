@@ -1,0 +1,46 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Verilog/ALU_2/ALU_testfinal_isim_beh.exe -prj D:/Verilog/ALU_2/ALU_testfinal_beh.prj work.ALU_testfinal work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Verilog/ALU_2/TwosComplement.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/Multiplicador.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/Divisor.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/Display.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/TwosComplement_6bits.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/TwosComplement2.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/Multiplicador_6bits.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/Divisor_6bits.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/Display_12bits.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/clk_div.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/ALU.v" into library work
+Analyzing Verilog file "D:/Verilog/ALU_2/ALU_testfinal.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/Verilog/ALU_2/ALU.v" Line 75: Port Residuo is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Verilog/ALU_2/ALU.v" Line 85: Port neg is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Verilog/ALU_2/ALU.v" Line 246: Port HEX_2 is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Verilog/ALU_2/ALU.v" Line 247: Size mismatch in connection of port <SW>. Formal port size is 8-bit while actual signal size is 12-bit.
+WARNING:HDLCompiler:1016 - "D:/Verilog/ALU_2/Divisor_6bits.v" Line 71: Port neg is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Verilog/ALU_2/Divisor_6bits.v" Line 102: Port HEX_2 is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Verilog/ALU_2/Multiplicador.v" Line 86: Size mismatch in connection of port <B>. Formal port size is 8-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module clk_div
+Compiling module TwosComplement
+Compiling module Divisor
+Compiling module Display
+Compiling module Divisor_6bits
+Compiling module Multiplicador
+Compiling module Multiplicador_6bits
+Compiling module TwosComplement_6bits
+Compiling module TwosComplement2
+Compiling module Display_12bits
+Compiling module ALU
+Compiling module ALU_testfinal
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 13 Verilog Units
+Built simulation executable D:/Verilog/ALU_2/ALU_testfinal_isim_beh.exe
+Fuse Memory Usage: 29188 KB
+Fuse CPU Usage: 999 ms

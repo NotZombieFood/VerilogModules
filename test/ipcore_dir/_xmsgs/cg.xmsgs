@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="sim" num="172" delta="new" >Generating IP...
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find ?D:\Verilog\MIPS\Rom.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for ?D:\Verilog\MIPS\Rom.coe</arg>
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;ram&apos;...</arg>
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file D:/Verilog/test/ipcore_dir/tmp/_cg/ram/doc/dist_mem_gen_v7_2_vinfo.html with file from view xilinx_documentation</arg>
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00100100000000100000000000100100</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000100100</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">10001100001000110000000000000000</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000000000</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00100100001000010000000000000100</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000000100</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">10001100001001000000000000000000</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000000000</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00000000100000110010100000101010</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0010100000101010</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00010000101000000000000000000100</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000000100</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00000000100000000001100000100000</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0001100000100000</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00010000001000100000000000000001</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000000001</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00001000000000000000000000001100</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000001100</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">10101100001000110000000000000100</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000000100</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00001000000000000000000000111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0000000000111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">11111111111111111111111111111111</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">1111111111111111</arg> in MIF file.
+</msg>
+
+<msg type="warning" file="sim" num="400" delta="new" >Large coefficient value <arg fmt="%s" index="1">00000000011000000001100000100000</arg> has been truncated to <arg fmt="%d" index="2">16</arg> bit binary value <arg fmt="%s" index="3">0001100000100000</arg> in MIF file.
+</msg>
+
+<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
+</msg>
+
+<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
+</msg>
+
+</messages>
+

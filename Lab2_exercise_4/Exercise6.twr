@@ -1,0 +1,255 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2I
+-n 3 -fastpaths -xml Exercise6.twx Exercise6.ncd -o Exercise6.twr Exercise6.pcf
+
+Design file:              Exercise6.ncd
+Physical constraint file: Exercise6.pcf
+Device,package,speed:     xa7a100t,csg324,I,-2I (PRELIMINARY 1.07 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock SW<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HEX_0<0>    |         7.702(F)|      SLOW  |         3.124(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<1>    |         7.992(F)|      SLOW  |         3.298(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<2>    |         7.856(F)|      SLOW  |         3.239(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<3>    |         7.882(F)|      SLOW  |         3.249(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<4>    |         7.748(F)|      SLOW  |         3.192(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<5>    |         7.753(F)|      SLOW  |         3.181(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<6>    |         7.617(F)|      SLOW  |         3.122(F)|      FAST  |_n0131<1>         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HEX_0<0>    |         7.855(F)|      SLOW  |         2.634(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<1>    |         8.145(F)|      SLOW  |         2.808(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<2>    |         8.009(F)|      SLOW  |         2.749(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<3>    |         8.035(F)|      SLOW  |         2.759(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<4>    |         7.901(F)|      SLOW  |         2.702(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<5>    |         7.906(F)|      SLOW  |         2.691(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<6>    |         7.770(F)|      SLOW  |         2.632(F)|      FAST  |_n0131<1>         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HEX_0<0>    |         7.983(F)|      SLOW  |         2.691(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<1>    |         8.273(F)|      SLOW  |         2.865(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<2>    |         8.137(F)|      SLOW  |         2.806(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<3>    |         8.163(F)|      SLOW  |         2.816(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<4>    |         8.029(F)|      SLOW  |         2.759(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<5>    |         8.034(F)|      SLOW  |         2.748(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<6>    |         7.898(F)|      SLOW  |         2.689(F)|      FAST  |_n0131<1>         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HEX_0<0>    |         7.812(F)|      SLOW  |         2.721(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<1>    |         8.102(F)|      SLOW  |         2.895(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<2>    |         7.966(F)|      SLOW  |         2.836(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<3>    |         7.992(F)|      SLOW  |         2.846(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<4>    |         7.858(F)|      SLOW  |         2.789(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<5>    |         7.863(F)|      SLOW  |         2.778(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<6>    |         7.727(F)|      SLOW  |         2.719(F)|      FAST  |_n0131<1>         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HEX_0<0>    |         7.901(F)|      SLOW  |         2.919(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<1>    |         8.191(F)|      SLOW  |         3.093(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<2>    |         8.055(F)|      SLOW  |         3.034(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<3>    |         8.081(F)|      SLOW  |         3.044(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<4>    |         7.947(F)|      SLOW  |         2.987(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<5>    |         7.952(F)|      SLOW  |         2.976(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<6>    |         7.816(F)|      SLOW  |         2.917(F)|      FAST  |_n0131<1>         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW<5> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HEX_0<0>    |         7.834(F)|      SLOW  |         2.894(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<1>    |         8.124(F)|      SLOW  |         3.068(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<2>    |         7.988(F)|      SLOW  |         3.009(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<3>    |         8.014(F)|      SLOW  |         3.019(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<4>    |         7.880(F)|      SLOW  |         2.962(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<5>    |         7.885(F)|      SLOW  |         2.951(F)|      FAST  |_n0131<1>         |   0.000|
+HEX_0<6>    |         7.749(F)|      SLOW  |         2.892(F)|      FAST  |_n0131<1>         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock SW<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    1.849|    1.849|
+SW<1>          |         |         |    2.002|    2.002|
+SW<2>          |         |         |    2.130|    2.130|
+SW<3>          |         |         |    1.959|    1.959|
+SW<4>          |         |         |    2.048|    2.048|
+SW<5>          |         |         |    1.981|    1.981|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    2.758|    2.758|
+SW<1>          |         |         |    2.911|    2.911|
+SW<2>          |         |         |    3.039|    3.039|
+SW<3>          |         |         |    2.868|    2.868|
+SW<4>          |         |         |    2.957|    2.957|
+SW<5>          |         |         |    2.890|    2.890|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    2.646|    2.646|
+SW<1>          |         |         |    2.799|    2.799|
+SW<2>          |         |         |    2.927|    2.927|
+SW<3>          |         |         |    2.756|    2.756|
+SW<4>          |         |         |    2.845|    2.845|
+SW<5>          |         |         |    2.778|    2.778|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    2.553|    2.553|
+SW<1>          |         |         |    2.706|    2.706|
+SW<2>          |         |         |    2.834|    2.834|
+SW<3>          |         |         |    2.663|    2.663|
+SW<4>          |         |         |    2.752|    2.752|
+SW<5>          |         |         |    2.685|    2.685|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    2.220|    2.220|
+SW<1>          |         |         |    2.373|    2.373|
+SW<2>          |         |         |    2.501|    2.501|
+SW<3>          |         |         |    2.330|    2.330|
+SW<4>          |         |         |    2.419|    2.419|
+SW<5>          |         |         |    2.352|    2.352|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<0>          |         |         |    2.315|    2.315|
+SW<1>          |         |         |    2.468|    2.468|
+SW<2>          |         |         |    2.596|    2.596|
+SW<3>          |         |         |    2.425|    2.425|
+SW<4>          |         |         |    2.514|    2.514|
+SW<5>          |         |         |    2.447|    2.447|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<0>          |HEX_1<0>       |    7.003|
+SW<0>          |HEX_1<1>       |    7.295|
+SW<0>          |HEX_1<2>       |    7.199|
+SW<0>          |HEX_1<3>       |    7.667|
+SW<0>          |HEX_1<4>       |    7.696|
+SW<0>          |HEX_1<5>       |    7.051|
+SW<0>          |HEX_1<6>       |    7.684|
+SW<1>          |HEX_1<0>       |    6.971|
+SW<1>          |HEX_1<1>       |    7.263|
+SW<1>          |HEX_1<2>       |    7.152|
+SW<1>          |HEX_1<3>       |    7.588|
+SW<1>          |HEX_1<4>       |    7.647|
+SW<1>          |HEX_1<5>       |    7.004|
+SW<1>          |HEX_1<6>       |    7.592|
+SW<2>          |HEX_1<0>       |    6.747|
+SW<2>          |HEX_1<1>       |    7.039|
+SW<2>          |HEX_1<2>       |    6.940|
+SW<2>          |HEX_1<3>       |    7.716|
+SW<2>          |HEX_1<4>       |    7.775|
+SW<2>          |HEX_1<5>       |    6.792|
+SW<2>          |HEX_1<6>       |    7.624|
+SW<3>          |HEX_1<0>       |    6.526|
+SW<3>          |HEX_1<1>       |    6.818|
+SW<3>          |HEX_1<2>       |    7.067|
+SW<3>          |HEX_1<3>       |    7.545|
+SW<3>          |HEX_1<4>       |    7.604|
+SW<3>          |HEX_1<5>       |    6.919|
+SW<3>          |HEX_1<6>       |    7.404|
+SW<4>          |HEX_1<0>       |    6.727|
+SW<4>          |HEX_1<1>       |    7.019|
+SW<4>          |HEX_1<2>       |    6.881|
+SW<4>          |HEX_1<3>       |    7.634|
+SW<4>          |HEX_1<4>       |    7.693|
+SW<4>          |HEX_1<5>       |    6.723|
+SW<4>          |HEX_1<6>       |    7.560|
+SW<5>          |HEX_1<0>       |    6.424|
+SW<5>          |HEX_1<1>       |    6.716|
+SW<5>          |HEX_1<2>       |    6.828|
+SW<5>          |HEX_1<3>       |    7.567|
+SW<5>          |HEX_1<4>       |    7.626|
+SW<5>          |HEX_1<5>       |    6.680|
+SW<5>          |HEX_1<6>       |    7.219|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Aug 21 22:07:42 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 612 MB
+
+
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/ALU/Divisor.xst" -ofn "D:/Verilog/ALU/Divisor.syr" 
+xst -intstyle ise -ifn "D:/Verilog/ALU/Divisor.xst" -ofn "D:/Verilog/ALU/Divisor.syr" 

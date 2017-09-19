@@ -1,0 +1,5 @@
+set -tmpdir "D:/Verilog/Clk_div/xst/projnav.tmp"
+set -xsthdpdir "D:/Verilog/Clk_div/xst"
+elaborate
+-ifn clk_div.prj
+-ifmt mixed

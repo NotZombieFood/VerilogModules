@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Verilog/Comparador_con_ecuaciones/Test_Comparador_isim_beh.exe" -prj "D:/Verilog/Comparador_con_ecuaciones/Test_Comparador_beh.prj" "work.Test_Comparador" "work.glbl" 

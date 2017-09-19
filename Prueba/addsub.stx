@@ -1,0 +1,34 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Verilog/Prueba/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to D:/Verilog/Prueba/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "adder.v" in library work
+Compiling verilog file "addsub.v" in library work
+Module <adder> compiled
+ERROR:HDLCompilers:26 - "addsub.v" line 38 unexpected token: '1'
+ERROR:HDLCompilers:26 - "addsub.v" line 38 unexpected token: '1'
+Module <addsub> compiled
+Analysis of file <"addsub.prj"> failed.
+--> 
+
+Total memory usage is 246228 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

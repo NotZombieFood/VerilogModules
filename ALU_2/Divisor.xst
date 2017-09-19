@@ -1,0 +1,5 @@
+set -tmpdir "D:/Verilog/ALU_2/xst/projnav.tmp"
+set -xsthdpdir "D:/Verilog/ALU_2/xst"
+elaborate
+-ifn Divisor.prj
+-ifmt mixed

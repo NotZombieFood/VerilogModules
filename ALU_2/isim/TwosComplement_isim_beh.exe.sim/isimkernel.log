@@ -1,0 +1,29 @@
+Command line:
+   TwosComplement_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50123
+
+Fri Sep 01 01:05:01 2017
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 841.314 Meg
+
+ Total Signals          : 15
+ Total Nets             : 29
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 7
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 109
+Total Line Count : 15
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 841.314 Meg
+
+Fri Sep 01 01:05:06 2017
+

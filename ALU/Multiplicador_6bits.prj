@@ -1,0 +1,4 @@
+verilog work "TwosComplement.v"
+verilog work "Multiplicador.v"
+verilog work "Display_12bits.v"
+verilog work "Multiplicador_6bits.v"
