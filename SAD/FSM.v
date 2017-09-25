@@ -65,6 +65,7 @@ always @ * begin
 	if (Mrst == 1 ) begin
 		rst=1;
 		en=0;
+		en_reg=0;
 	end
 	else begin
 	case (STATE)
@@ -88,7 +89,7 @@ always @ * begin
 			en=1;
 			en_reg=0;
 		end
-		3'b101:begin
+		3'b100:begin
 			rst=0;
 			en=0;
 			en_reg=1;

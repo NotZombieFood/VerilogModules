@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Verilog/SAD/SAD.xst" -ofn "D:/Verilog/SAD/SAD.syr" 
+xst -intstyle ise -ifn "D:/Verilog/SAD/SAD.xst" -ofn "D:/Verilog/SAD/SAD.syr" 
+xst -intstyle ise -ifn "D:/Verilog/SAD/SAD.xst" -ofn "D:/Verilog/SAD/SAD.syr" 
+xst -intstyle ise -ifn "D:/Verilog/SAD/SAD.xst" -ofn "D:/Verilog/SAD/SAD.syr" 
+xst -intstyle ise -ifn "D:/Verilog/SAD/SAD.xst" -ofn "D:/Verilog/SAD/SAD.syr" 

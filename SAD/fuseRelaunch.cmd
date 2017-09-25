@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Verilog/SAD/Test_FSM_isim_beh.exe" -prj "D:/Verilog/SAD/Test_FSM_beh.prj" "work.Test_FSM" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Verilog/SAD/Test_Sad_isim_beh.exe" -prj "D:/Verilog/SAD/Test_Sad_beh.prj" "work.Test_Sad" "work.glbl" 

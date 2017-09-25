@@ -22,70 +22,190 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SAD.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="FSM.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="FSM.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_FSM_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ABS.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ABS.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ABS.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ABS.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ABS.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ABS.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ABS.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ABS.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ABS_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Comparator.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Comparator.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Comparator.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="FSM.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="FSM.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="FSM.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="FSM.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="FSM.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FSM.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FSM.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="FSM_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FSM_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SAD.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SAD.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SAD.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SAD.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SAD.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SAD.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SAD.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SAD.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SAD_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SAD_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SAD_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_ABS_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Comparator_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Comparator_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_Comparator_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_FSM_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_FSM_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_FSM_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Sad_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Sad_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_Sad_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_TwosComplement_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_substractor_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1505825948" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1505825948">
-      <status xil_pn:value="SuccessfullyRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1505826027" xil_pn:in_ck="-2346184132490284625" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1505826027">
+    <transform xil_pn:end_ts="1506312043" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1506312042">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506312043" xil_pn:in_ck="5216079811569423893" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1506312043">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ABS.v"/>
+      <outfile xil_pn:name="Adder.v"/>
+      <outfile xil_pn:name="Comparator.v"/>
       <outfile xil_pn:name="FSM.v"/>
       <outfile xil_pn:name="SAD.v"/>
+      <outfile xil_pn:name="Substractor.v"/>
+      <outfile xil_pn:name="Sum.v"/>
+      <outfile xil_pn:name="Test_ABS.v"/>
+      <outfile xil_pn:name="Test_Comparator.v"/>
       <outfile xil_pn:name="Test_FSM.v"/>
+      <outfile xil_pn:name="Test_SAD.v"/>
+      <outfile xil_pn:name="Test_TwosComplement.v"/>
+      <outfile xil_pn:name="Test_substractor.v"/>
+      <outfile xil_pn:name="Twos_Complement.v"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="sad_reg.v"/>
     </transform>
-    <transform xil_pn:end_ts="1505825948" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8185632471903835228" xil_pn:start_ts="1505825948">
+    <transform xil_pn:end_ts="1506312043" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="233181115381107854" xil_pn:start_ts="1506312043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1505825948" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4873883285575633940" xil_pn:start_ts="1505825948">
+    <transform xil_pn:end_ts="1506312043" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5577752964244379578" xil_pn:start_ts="1506312043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1505825948" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3755146438665983301" xil_pn:start_ts="1505825948">
+    <transform xil_pn:end_ts="1506312043" xil_pn:in_ck="1805805566965769643" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3755724089042093559" xil_pn:start_ts="1506312043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_A.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_A.v"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_B.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_B.v"/>
     </transform>
-    <transform xil_pn:end_ts="1505826027" xil_pn:in_ck="-2346184132490284625" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1505826027">
+    <transform xil_pn:end_ts="1506312043" xil_pn:in_ck="147217313343372984" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1506312043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ABS.v"/>
+      <outfile xil_pn:name="Adder.v"/>
+      <outfile xil_pn:name="Comparator.v"/>
       <outfile xil_pn:name="FSM.v"/>
       <outfile xil_pn:name="SAD.v"/>
+      <outfile xil_pn:name="Substractor.v"/>
+      <outfile xil_pn:name="Sum.v"/>
+      <outfile xil_pn:name="Test_ABS.v"/>
+      <outfile xil_pn:name="Test_Comparator.v"/>
       <outfile xil_pn:name="Test_FSM.v"/>
+      <outfile xil_pn:name="Test_SAD.v"/>
+      <outfile xil_pn:name="Test_TwosComplement.v"/>
+      <outfile xil_pn:name="Test_substractor.v"/>
+      <outfile xil_pn:name="Twos_Complement.v"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_A.v"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_B.v"/>
+      <outfile xil_pn:name="sad_reg.v"/>
     </transform>
-    <transform xil_pn:end_ts="1505826031" xil_pn:in_ck="-2346184132490284625" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4572160194939754292" xil_pn:start_ts="1505826027">
+    <transform xil_pn:end_ts="1506312051" xil_pn:in_ck="147217313343372984" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3544162070616896040" xil_pn:start_ts="1506312043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_FSM_beh.prj"/>
-      <outfile xil_pn:name="Test_FSM_isim_beh.exe"/>
+      <outfile xil_pn:name="Test_Sad_beh.prj"/>
+      <outfile xil_pn:name="Test_Sad_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1505826252" xil_pn:in_ck="2363566419830645172" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4698220858423754665" xil_pn:start_ts="1505826252">
+    <transform xil_pn:end_ts="1506312051" xil_pn:in_ck="-6843988626359326883" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3557613319207196219" xil_pn:start_ts="1506312051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Test_FSM_isim_beh.wdb"/>
+      <outfile xil_pn:name="Test_Sad_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1506081867" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1506081867">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506311147" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1776746611946907015" xil_pn:start_ts="1506311147">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506311147" xil_pn:in_ck="1805805566965769643" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3755724089042093559" xil_pn:start_ts="1506311147">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_A.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_A.v"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_B.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Rom_B.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1506084804" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1506084803">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506311147" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8839990137546074673" xil_pn:start_ts="1506311147">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506084804" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="4779560239316253549" xil_pn:start_ts="1506084804">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506311147" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8463292777048701185" xil_pn:start_ts="1506311147">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1506311165" xil_pn:in_ck="491989528276913373" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-3493571431652973993" xil_pn:start_ts="1506311147">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="ABS.ngr"/>
+      <outfile xil_pn:name="FSM.ngr"/>
+      <outfile xil_pn:name="SAD.lso"/>
+      <outfile xil_pn:name="SAD.ngc"/>
+      <outfile xil_pn:name="SAD.ngr"/>
+      <outfile xil_pn:name="SAD.prj"/>
+      <outfile xil_pn:name="SAD.stx"/>
+      <outfile xil_pn:name="SAD.syr"/>
+      <outfile xil_pn:name="SAD.xst"/>
+      <outfile xil_pn:name="SAD_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 
