@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Verilog/MIPS/Alu_final.xst" -ofn "D:/Verilog/MIPS/Alu_final.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MIPS/Alu_final.xst" -ofn "D:/Verilog/MIPS/Alu_final.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Alu_final.ngc Alu_final_synthesis.v 
+xst -intstyle ise -ifn "D:/Verilog/MIPS/Alu_final.xst" -ofn "D:/Verilog/MIPS/Alu_final.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MIPS/Alu_final.xst" -ofn "D:/Verilog/MIPS/Alu_final.syr" 

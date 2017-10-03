@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Verilog/MIPS/RegisterBank.xst" -ofn "D:/Verilog/MIPS/RegisterBank.syr" 
