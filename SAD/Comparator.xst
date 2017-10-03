@@ -1,5 +1,0 @@
-set -tmpdir "D:/Verilog/SAD/xst/projnav.tmp"
-set -xsthdpdir "D:/Verilog/SAD/xst"
-elaborate
--ifn Comparator.prj
--ifmt mixed

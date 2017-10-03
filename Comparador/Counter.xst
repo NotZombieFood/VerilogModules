@@ -1,5 +1,0 @@
-set -tmpdir "D:/Verilog/Comparador/xst/projnav.tmp"
-set -xsthdpdir "D:/Verilog/Comparador/xst"
-elaborate
--ifn Counter.prj
--ifmt mixed

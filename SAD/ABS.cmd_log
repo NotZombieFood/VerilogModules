@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "D:/Verilog/SAD/ABS.xst" -ofn "D:/Verilog/SAD/ABS.syr" 

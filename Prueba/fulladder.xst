@@ -1,5 +1,0 @@
-set -tmpdir "D:/Verilog/Prueba/xst/projnav.tmp"
-set -xsthdpdir "D:/Verilog/Prueba/xst"
-elaborate
--ifn fulladder.prj
--ifmt mixed

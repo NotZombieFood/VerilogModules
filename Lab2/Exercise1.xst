@@ -1,5 +1,0 @@
-set -tmpdir "D:/Verilog/Lab2/xst/projnav.tmp"
-set -xsthdpdir "D:/Verilog/Lab2/xst"
-elaborate
--ifn Exercise1.prj
--ifmt mixed

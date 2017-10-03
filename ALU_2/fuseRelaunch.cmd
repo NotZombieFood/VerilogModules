@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Verilog/ALU_2/ALU_testfinal_isim_beh.exe" -prj "D:/Verilog/ALU_2/ALU_testfinal_beh.prj" "work.ALU_testfinal" "work.glbl" 

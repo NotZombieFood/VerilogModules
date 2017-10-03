@@ -1,6 +1,0 @@
-xst -intstyle ise -ifn "D:/Verilog/Lab2_exercise_4/Exercise_4.xst" -ofn "D:/Verilog/Lab2_exercise_4/Exercise_4.syr" 
-xst -intstyle ise -ifn "D:/Verilog/Lab2_exercise_4/Exercise_4.xst" -ofn "D:/Verilog/Lab2_exercise_4/Exercise_4.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I Exercise_4.ngc Exercise_4.ngd  
-map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exercise_4_map.ncd Exercise_4.ngd Exercise_4.pcf 
-par -w -intstyle ise -ol high -mt off Exercise_4_map.ncd Exercise_4.ncd Exercise_4.pcf 
-trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Exercise_4.twx Exercise_4.ncd -o Exercise_4.twr Exercise_4.pcf 

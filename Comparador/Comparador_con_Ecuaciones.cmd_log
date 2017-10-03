@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "D:/Verilog/Comparador/Comparador_con_Ecuaciones.xst" -ofn "D:/Verilog/Comparador/Comparador_con_Ecuaciones.syr" 
