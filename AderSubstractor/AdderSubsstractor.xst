@@ -1,5 +1,0 @@
-set -tmpdir "D:/Verilog/AderSubstractor/xst/projnav.tmp"
-set -xsthdpdir "D:/Verilog/AderSubstractor/xst"
-elaborate
--ifn AdderSubsstractor.prj
--ifmt mixed

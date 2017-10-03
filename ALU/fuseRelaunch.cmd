@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/ALU/test_multiplicador6bits_isim_beh.exe" -prj "D:/Verilog/ALU/test_multiplicador6bits_beh.prj" "work.test_multiplicador6bits" "work.glbl" 

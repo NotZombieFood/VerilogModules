@@ -41,7 +41,7 @@ module SAD(
 	wire [31:0]sum;
 	wire [31:0] adder;
 	
-	//Asignación de salidas
+	//Asignaciï¿½n de salidas
 	assign AB_addr = i;
 	
 	//FSM
@@ -108,13 +108,13 @@ module SAD(
 	);
 	
 	//Rom_A
-	Rom_A r1(
+	ROM_A r1(
 		.a(i),
 		.spo(A_data)
 	);
 	
 	//Rom_B
-	Rom_B r2(
+	ROM_B r2(
 		.a(i),
 		.spo(B_data)
 	);

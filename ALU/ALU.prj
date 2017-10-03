@@ -1,4 +1,0 @@
-verilog work "TwosComplement.v"
-verilog work "Multiplicador.v"
-verilog work "Divisor.v"
-verilog work "ALU.v"
